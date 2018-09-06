@@ -2146,7 +2146,10 @@ dhb.ui.mapper = Geyser.Mapper:new({
   x = 0, y = 0,
   width = "100%",
   height = "50%%",
-}, dhb.ui.mapchat)</script>
+}, dhb.ui.mapchat)
+
+-- reposition timer after YATCO is up
+tempTimer(1, function() dhb.ui.mapper:reposition() end)</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
