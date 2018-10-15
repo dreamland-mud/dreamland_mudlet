@@ -14,6 +14,8 @@ REPO=`git config remote.origin.url`
 SHA=`git rev-parse --verify HEAD`
 echo "Repository: $REPO"
 echo "SHA: $SHA"
+pwd
+ls -a
 ls $HOME
 exit 0
 
