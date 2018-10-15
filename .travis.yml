@@ -1,5 +1,8 @@
 language: generic
 dist: xenial
 script: bash ./deploy.sh
-
+env:
+  global:
+  - ENCRYPTION_LABEL: "367ff54222a2"
+  
 
