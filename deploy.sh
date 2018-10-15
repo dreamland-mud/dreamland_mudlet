@@ -17,13 +17,17 @@ echo "Repository: $REPO"
 echo "SHA: $SHA"
 
 zip dl-new.zip Dreamland.xml config.lua
+git clone $REPO gh-pages
+cd gh-pages
 git checkout gh-pages
-mv dl-new.zip downloads/dl.zip
+mv ../dl-new.zip downloads/dl.zip
 if git diff --quiet; then
     echo "No changes to zip file, skipping deploy."
     exit 0
 fi
 
+git config user.name "Travis CI"
+git config user.email "ruffina.koza@gmail.com"
 git add -A .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
