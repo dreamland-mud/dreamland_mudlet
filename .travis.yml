@@ -1,3 +1,5 @@
 language: generic
+dist: xenial
 script: bash ./deploy.sh
+
 
