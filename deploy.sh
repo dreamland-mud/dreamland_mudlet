@@ -15,6 +15,7 @@ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 echo "Repository: $REPO"
 echo "SHA: $SHA"
+ls -la
 
 zip dl-new.zip Dreamland.xml config.lua
 git clone $REPO gh-pages
@@ -31,18 +32,7 @@ git config user.email "ruffina.koza@gmail.com"
 git add -A .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
-ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
-ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
-echo "KEY_VAR $ENCRYPTED_KEY_VAR IV_VAR $ENCRYPTED_IV_VAR"
-ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-echo "KEY $ENCRYPTED_KEY IV $ENCRYPTED_IV"
-echo $encrypted_367ff54222a2_key
-echo $encrypted_367ff54222a2_id
-echo ""
-set | grep encr
-
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../deploy_key.enc -out ../deploy_key -d
+#openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../deploy_key.enc -out ../deploy_key -d
 chmod 600 ../deploy_key
 eval `ssh-agent -s`
 ssh-add ../deploy_key
