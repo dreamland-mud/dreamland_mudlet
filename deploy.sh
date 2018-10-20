@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-
-echo "Travis branch: $TRAVIS_BRANCH"
-
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
     echo "Not on master, skipping deploy."
     exit 0
@@ -12,20 +9,21 @@ fi
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
-echo "Repository: $REPO"
-echo "SHA: $SHA"
-ls -la
 
-zip dl-new.zip Dreamland.xml config.lua
-git clone $REPO gh-pages
-cd gh-pages
-git checkout gh-pages
-mv ../dl-new.zip downloads/dl.zip
-if git diff --quiet; then
+git clone --depth=10 --branch=gh-pages $REPO gh-pages
+cd gh-pages/downloads && unzip dl.zip
+if diff Dreamland.xml ../../Dreamland.xml && diff config.lua ../../config.lua; then
     echo "No changes to zip file, skipping deploy."
     exit 0
 fi
 
+echo "Updating dl.zip"
+(cd ../.. && zip gh-pages/downloads/dl.zip Dreamland.xml config.lua)
+
+ver=`cat version`
+echo $((ver+1)) > version
+echo "Updating version to "`cat version`
+ 
 git config user.name "Travis CI"
 git config user.email "ruffina.koza@gmail.com"
 git add -A .
