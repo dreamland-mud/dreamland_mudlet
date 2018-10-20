@@ -2,10 +2,9 @@
 set -e
 
 
-SOURCE_BRANCH="master"
-TARGET_BRANCH="gh-pages"
+echo "Travis branch: $TRAVIS_BRANCH"
 
-if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
+if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
     echo "Not on master, skipping deploy."
     exit 0
 fi
@@ -32,9 +31,8 @@ git config user.email "ruffina.koza@gmail.com"
 git add -A .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
-#openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../deploy_key.enc -out ../deploy_key -d
 chmod 600 ../deploy_key
 eval `ssh-agent -s`
 ssh-add ../deploy_key
 
-git push $SSH_REPO $TARGET_BRANCH
+git push $SSH_REPO gh-pages
