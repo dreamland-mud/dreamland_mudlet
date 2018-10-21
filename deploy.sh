@@ -18,7 +18,7 @@ if diff Dreamland.xml ../../Dreamland.xml && diff config.lua ../../config.lua; t
 fi
 
 echo "Updating dl.zip"
-(rm dl.zip && cd ../.. && zip gh-pages/downloads/dl.zip Dreamland.xml config.lua)
+(rm -f * && cd ../.. && zip gh-pages/downloads/dl.zip Dreamland.xml config.lua)
 
 ver=`cat version`
 echo $((ver+1)) > version
