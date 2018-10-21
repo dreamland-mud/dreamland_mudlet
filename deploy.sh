@@ -5,6 +5,7 @@ set
 
 #TRAVIS_PULL_REQUEST="false"
 #TRAVIS_BRANCH="master"
+
 PACKAGED="Dreamland.xml config.lua"
 ARCHIVE="gh-pages/downloads/dl.zip"
 REPO=`git config remote.origin.url`
@@ -19,7 +20,7 @@ fi
 echo "Checking for changes..."
 git clone --depth=10 --branch=gh-pages $REPO gh-pages
 unzip -o $ARCHIVE
-if git diff --quiet; then
+if git diff --quiet -- $PACKAGED; then
     echo "No changes to zip file, skipping deploy."
     exit 0
 fi
@@ -41,10 +42,5 @@ git config user.name "Travis CI"
 git config user.email "ruffina.koza@gmail.com"
 git add -A .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
-
-chmod 600 $TRAVIS_BUILD_DIR/deploy_key
-eval `ssh-agent -s`
-ssh-add $TRAVIS_BUILD_DIR/deploy_key
-
 git push $SSH_REPO gh-pages
 echo "Done"
