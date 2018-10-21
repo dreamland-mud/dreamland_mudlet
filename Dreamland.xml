@@ -2752,6 +2752,7 @@ function demonnic.chat:hecho(chat, message)
   end
 end
 
+
 function demonnic.chat:echo(chat, message)
   local alltab = demonnic.chat.config.Alltab
   local blink = demonnic.chat.config.blink
