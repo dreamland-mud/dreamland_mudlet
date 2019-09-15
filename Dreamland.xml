@@ -117,8 +117,12 @@ dhb.stats.targetpercent = tonumber(matches[3])</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>Извини, но ты не можешь туда идти.</string>
+					<string>Жаль, но ты не можешь туда идти.</string>
+					<string>Ты не можешь войти в чужую гильдию.</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>3</integer>
+					<integer>3</integer>
 					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
