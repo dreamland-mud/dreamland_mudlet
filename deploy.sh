@@ -7,7 +7,7 @@ set
 #TRAVIS_BRANCH="master"
 
 PACKAGED="Dreamland.xml config.lua"
-ARCHIVE="gh-pages/downloads/dl.zip"
+ARCHIVE="gh-pages/downloads/Dreamland.zip"
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
