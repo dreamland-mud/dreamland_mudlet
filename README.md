@@ -61,4 +61,4 @@ The package is Lua in `src/`, assembled into `Dreamland.xml` by `python3 build.p
 
 Everything comes from GMCP, never from matching game text: `Dreamland.Prompt` (the web client's prompt object, sent as changes only), `Comm.Channel.Text` for chat, plus `Char.Vitals`. The server side lives in `plug-ins/gmcp` of [dreamland_code](https://github.com/dreamland-mud/dreamland_code).
 
-A push to `master` that changes the package builds `Dreamland.zip` on `gh-pages` and bumps `downloads/version`. The game server reads that version and offers the new zip to every Mudlet player through GMCP `Client.GUI`.
+To release, zip `Dreamland.xml` and `config.lua` into `downloads/Dreamland.zip` on the `gh-pages` branch and bump `downloads/version`. The game server reads that version and offers the new zip to every Mudlet player through GMCP `Client.GUI`.
