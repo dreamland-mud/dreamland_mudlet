@@ -491,8 +491,15 @@ local function out(text, color)
   dl.ui.info:hecho((color or C.text) .. text)
 end
 
+-- Sections are separated by a blank line; the first one starts at the top.
+local firstSection = true
+
 local function title(text)
-  out("\n" .. text .. "\n", C.title)
+  if not firstSection then
+    out("\n")
+  end
+  firstSection = false
+  out(text .. "\n", C.title)
 end
 
 local function pad(s, n)
@@ -665,13 +672,34 @@ local function stats(p)
   end
 end
 
-local function who(p)
+-- How many more lines fit in the panel. A console that overflows sits
+-- scrolled to its bottom and hides the top blocks, so the who list, the only
+-- block that grows with the world, gets whatever room is left.
+local function freeLines()
+  local _, lineHeight = calcFontSize("dl.info")
+  if not lineHeight or lineHeight &lt;= 0 then
+    return 1000
+  end
+  local fits = math.floor(dl.ui.info:get_height() / lineHeight)
+  return fits - getLineCount("dl.info")
+end
+
+local function who(p, room)
   local w = p.who
   if type(w) ~= "table" or type(w.p) ~= "table" then
     return
   end
+  -- Blank separator and title take two lines; keep one for the "+N" line.
+  local rows = #w.p
+  if rows &gt; room - 2 then
+    rows = math.max(room - 3, 0)
+  end
   title(string.format("%s (%s)", dl.t("who.title"), w.t or #w.p))
-  for _, pl in ipairs(w.p) do
+  for i, pl in ipairs(w.p) do
+    if i &gt; rows then
+      out(string.format("+%d\n", #w.p - rows), C.dim)
+      break
+    end
     local name = pl.n or "?"
     dl.ui.info:hechoLink(C.room .. pad(name, 13), function()
       send("whois " .. name, true)
@@ -690,13 +718,14 @@ function dl.ui.renderInfo()
   end
   local p = dl.prompt
   dl.ui.info:clear()
+  firstSection = true
   location(p)
   timeWeather(p)
   quests(p)
   group(p)
   affects(p)
   stats(p)
-  who(p)
+  who(p, freeLines())
 end
 </script>
 				<eventHandlerList />
