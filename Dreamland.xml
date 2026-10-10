@@ -1,230 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
-	<TriggerPackage>
-		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-			<name>Dreamland UI</name>
-			<script></script>
-			<triggerType>0</triggerType>
-			<conditonLineDelta>0</conditonLineDelta>
-			<mStayOpen>0</mStayOpen>
-			<mCommand></mCommand>
-			<packageName></packageName>
-			<mFgColor>#ff0000</mFgColor>
-			<mBgColor>#ffff00</mBgColor>
-			<mSoundFile></mSoundFile>
-			<colorTriggerFgColor>#000000</colorTriggerFgColor>
-			<colorTriggerBgColor>#000000</colorTriggerBgColor>
-			<regexCodeList />
-			<regexCodePropertyList />
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="yes" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>prompt trigger</name>
-				<script>dhb.stats.health = tonumber(multimatches[2][2])
-dhb.stats.maxhealth = tonumber(multimatches[2][3])
-dhb.stats.mana = tonumber(multimatches[2][4])
-dhb.stats.maxmana = tonumber(multimatches[2][5])
-dhb.stats.steps = tonumber(multimatches[2][6])
-dhb.stats.maxsteps = tonumber(multimatches[2][7])
-dhb.stats.mypercent, dhb.stats.targetpercent = nil, nil</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>&lt;</string>
-					<string>&lt;(\d+)/(\d+)зд (\d+)/(\d+)ман (\d+)/(\d+)шг (\d+)</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>2</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>combat</name>
-					<script>dhb.stats.mypercent = tonumber(matches[2])
-dhb.stats.targetpercent = tonumber(matches[3])</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>\[(\d+)%:(\d+)%\]</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Raise prompt event</name>
-					<script>raiseEvent("dhb on prompt")</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>return true</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>4</integer>
-					</regexCodePropertyList>
-				</Trigger>
-			</Trigger>
-		</TriggerGroup>
-		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-			<name>Dreamland mapper script</name>
-			<script></script>
-			<triggerType>0</triggerType>
-			<conditonLineDelta>0</conditonLineDelta>
-			<mStayOpen>0</mStayOpen>
-			<mCommand></mCommand>
-			<packageName></packageName>
-			<mFgColor>#ff0000</mFgColor>
-			<mBgColor>#ffff00</mBgColor>
-			<mSoundFile></mSoundFile>
-			<colorTriggerFgColor>#000000</colorTriggerFgColor>
-			<colorTriggerBgColor>#000000</colorTriggerBgColor>
-			<regexCodeList />
-			<regexCodePropertyList />
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Can't go there</name>
-				<script>raiseEvent("onMoveFail")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Извини, но ты не можешь туда идти.</string>
-					<string>Жаль, но ты не можешь туда идти.</string>
-					<string>Ты не можешь войти в чужую гильдию.</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Random movement</name>
-				<script>raiseEvent("onRandomMove")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Ты убегаешь с поля битвы!</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Can't see</name>
-				<script>raiseEvent("onVisionFail")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Здесь слишком темно ... </string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
-		</TriggerGroup>
-		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-			<name>Dreamland tabbed chat</name>
-			<script></script>
-			<triggerType>0</triggerType>
-			<conditonLineDelta>0</conditonLineDelta>
-			<mStayOpen>0</mStayOpen>
-			<mCommand></mCommand>
-			<packageName></packageName>
-			<mFgColor>#ff0000</mFgColor>
-			<mBgColor>#ffff00</mBgColor>
-			<mSoundFile></mSoundFile>
-			<colorTriggerFgColor>#000000</colorTriggerFgColor>
-			<colorTriggerBgColor>#000000</colorTriggerBgColor>
-			<regexCodeList />
-			<regexCodePropertyList />
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>OOC</name>
-				<script>demonnic.chat:append("OOC")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>[ooc]</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>2</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Auction</name>
-				<script>demonnic.chat:append("Auction")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string> AUCTION:</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>2</integer>
-				</regexCodePropertyList>
-			</Trigger>
-		</TriggerGroup>
-	</TriggerPackage>
-	<TimerPackage />
 	<AliasPackage>
 		<AliasGroup isActive="yes" isFolder="yes">
 			<name>Dreamland</name>
@@ -233,1273 +9,1028 @@ dhb.stats.targetpercent = tonumber(matches[3])</script>
 			<packageName></packageName>
 			<regex></regex>
 			<Alias isActive="yes" isFolder="no">
-				<name>Stop speedwalking</name>
-				<script>dhb.stopwalking()</script>
+				<name>dl</name>
+				<script>dl.command(matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^mstop$</regex>
+				<regex>^dl(?:\s+(.*))?$</regex>
 			</Alias>
 		</AliasGroup>
 	</AliasPackage>
-	<ActionPackage />
 	<ScriptPackage>
 		<ScriptGroup isActive="yes" isFolder="yes">
-			<name>Dreamland UI</name>
-			<packageName></packageName>
-			<script> -- initial UI by Vadi
- 
- dhb = dhb or {
-  stats = {
-    health = 0,
-    maxhealth = 10,
-    mana = 0,
-    maxmana = 100,
-    steps = 0,
-    maxsteps = 100
-	},
-	ui = {},
-	version = 0.3
-}</script>
-			<eventHandlerList />
-			<Script isActive="yes" isFolder="no">
-				<name>UI</name>
-				<packageName></packageName>
-				<script>local function addstyling(gauge, color)
-  gauge:setStyleSheet([[
-    border-width: 1px; border-style: solid; border-radius: 5px; background-color: ]]..color)
-end
-
-dhb.bottompanel = Geyser.HBox:new({
-  name="bottompanel",
-  x=0, y="-3%",
-  width="100%", height="3%",
-})
-setBorderBottom(dhb.bottompanel:get_height())
-
-dhb.healthbox = Geyser.HBox:new({name="dhb.healthbox"}, dhb.bottompanel)
-dhb.healthbar = Geyser.Gauge:new({name="healthbar"}, dhb.healthbox)
-addstyling(dhb.healthbar.front, "#BB0000")
-addstyling(dhb.healthbar.back, "#630000")
-
-dhb.enemyhealthbar = Geyser.Gauge:new({name="enemyhealthbar"}, dhb.healthbox)
-addstyling(dhb.enemyhealthbar.front, "#990000")
-addstyling(dhb.enemyhealthbar.back, "#420000")
-
-dhb.manabar = Geyser.Gauge:new({name="manabar"}, dhb.bottompanel)
-addstyling(dhb.manabar.front, "#3465A4")
-addstyling(dhb.manabar.back, "#182f4c")
-
-dhb.stepsbar = Geyser.Gauge:new({name="stepsbar"}, dhb.bottompanel)
-addstyling(dhb.stepsbar.front, "#055705")
-addstyling(dhb.stepsbar.back, "#0aab0a")
-
-function dhb.ui.updatestats()
-  dhb.healthbar:setValue(dhb.stats.health, dhb.stats.maxhealth)
-  dhb.healthbar:setText(string.format(
-	  "&lt;center&gt;Здоровье %d/%d&lt;/center&gt;", dhb.stats.health, dhb.stats.maxhealth))
-		
-  dhb.manabar:setValue(dhb.stats.mana, dhb.stats.maxmana)
-  dhb.manabar:setText(string.format(
-	  "&lt;center&gt;Мана %d/%d&lt;/center&gt;", dhb.stats.mana, dhb.stats.maxmana))
-		
-  dhb.stepsbar:setValue(dhb.stats.steps, dhb.stats.maxsteps)
-  dhb.stepsbar:setText(string.format(
-	  "&lt;center&gt;Шаги %d/%d&lt;/center&gt;", dhb.stats.steps, dhb.stats.maxsteps))
-end
-
-function dhb.ui.updatecombat()
-  if not dhb.stats.targetpercent then
-	  dhb.enemyhealthbar:hide()
-		dhb.enemyhealthbar.h_stretch_factor = 0
-		dhb.healthbar.h_stretch_factor = 2
-    dhb.healthbox:organize()
-		dhb.healthbox:reposition()
-		return
-	end
-	
-	dhb.healthbar.h_stretch_factor = 1
-	dhb.enemyhealthbar.h_stretch_factor = 1
-	dhb.enemyhealthbar:setValue(dhb.stats.targetpercent, 100)
-	dhb.enemyhealthbar:show()
-  dhb.healthbox:organize()
-	dhb.healthbox:reposition()
-end
-
-
-registerAnonymousEventHandler("dhb on prompt", "dhb.ui.updatestats")
-registerAnonymousEventHandler("dhb on prompt", "dhb.ui.updatecombat")
-
-raiseEvent("dhb on prompt")</script>
-				<eventHandlerList />
-			</Script>
-		</ScriptGroup>
-		<ScriptGroup isActive="yes" isFolder="yes">
-			<name>Dreamland mapper script</name>
+			<name>Dreamland</name>
 			<packageName></packageName>
 			<script></script>
 			<eventHandlerList />
 			<Script isActive="yes" isFolder="no">
-				<name>Simple Window Manager</name>
+				<name>core</name>
 				<packageName></packageName>
-				<script>-- Window Manager Script --
---  Zachary Hiland
---  10/22/2016
---  v2.00c
+				<script>-- DreamLand interface for Mudlet.
 --
---  Functions Details
---
---      windowManager.create(name, type, x, y, width, height, origin, [font_size]) or windowManager.add(info_table)
---      creates a window and adds it to the windowManager
---
---      info_table must have a valid entry for each argument, by the same name, as in the normal function call
---      name - name of already created window (label, miniConsole, gauge, mapper, menu, or autowrap)
---          Note: for a mapper window, use any name you like, so long as it isn't the name of some other object
---      type - identify the type of window, must be label, miniConsole, gauge, mapper, or menu
---      x - distance horizontally from the origin corner
---      y - distance vertically from the origin corner
---      width - width of window
---      height - height of window
---      origin - corner to act as origin for this window, must be topleft, topright, bottomleft, or bottomright
---      font_size - only used for autowrap windows, will be automatically set as the font size for the created window
---
---      note: all measurements should be numbers, or strings with values measured in percent or pixels (or unlabeled)
---          if a measurement contains both percent and pixel values (or multiple values of the same type), they should be separated
---          by a "+" symbol. Example: "25% + 50px + 16"
---      important: no negative numbers
---
---      windowManager.add(name, type, x, y, width, height, origin, font_size) or windowManager.create(info_table)
---      adds an already created window to the windowManager, uses the exact same arguments as those in the "create" function
---
---      windowManager.remove(name)
---      removes a window from the windowManager
---
---      windowManager.move(name, x, y)
---      moves a window with the windowManager
---
---      windowManager.resize(name, width, height)
---      resizes a window with the windowManager
---
---      windowManager.relocate(name, origin)
---      changes the corner acting as the origin for a window in the windowManager
---
---      windowManager.show(name)
---      shows a window that is managed by windowManager (you can also use showWindow or showGauge functions)
---          Note: this is only really important for a mapper window
---
---      windowManager.hide(name)
---      hides a window that is managed by windowManager (you can also use hideWindow or hideGauge functions)
---          Note: this is only really important for a mapper window
---
---      windowManager.getValue(name, value)
---      returns the calculated size or position values, or the origin, for a window in the windowManager
---
---      windowManager.math(value1, value2, operation)
---      allows addition and subtraction of measurements with each other,
---      and multiplication and division of a measurement by a normal number
---
---      windowManager.simplify(measurement)
---      returns a simplified version of a measurement (all percent and pixel values are combined together)
---
---      windowManager.refresh(name)
---      sets the size and location of a window in the windowManager using previously set values
---      note: generally this function does not need to be called
---
---      windowManager.refreshAll()
---      note: this function is called automatically when a sysWindowResizeEvent event occurs,
---          and generally does not need to be called manually
---
---      windowManager.createBuffer(name)
---      creates a buffer to be used with an autowrap window, only needed if miniconsole added manually to windowManager
---
---      windowManager.append(name)
---      appends text to an autowrap window, works just like appendBuffer()
---
---      windowManager.echo(name, text)
---      echoes text to an autowrap window. cecho, decho, and hecho are also available.
---
---      windowManager.clear(name)
---      clears an autowrap window.
---
---      windowManager.setFontSize(name, font_size)
---      sets the font size for an autowrap window.
+-- Everything on screen comes from GMCP (Char.Vitals, Dreamland.Prompt,
+-- Comm.Channel.Text), never from matching game text, so it works in every game
+-- language and with any custom prompt. The game text itself is never gagged or
+-- moved: the panels only repeat it, so screen reader players lose nothing.
+dl = dl or {}
+dl.version = "2.0"
+dl.prompt = dl.prompt or {}
+dl.ui = dl.ui or {}
 
-windowManager = windowManager or {}
-windowManager.list = windowManager.list or {}
+local SETTINGS_FILE = getMudletHomeDir() .. "/dreamland_ui.lua"
 
-local function calcScaledNum(scale,num)
-    scale_table = string.split(scale," %+ ")
-    if #scale_table &gt; 2 then
-        scale = windowManager.simplify(scale)
-        scale_table = string.split(scale," %+ ")
-    end
-    scale = 0
-    if #scale_table == 2 then
-        scale = string.cut(scale_table[1],#scale_table[1] - 1) * num / 100
-        scale = scale + string.gsub(scale_table[2],"px","")
-    elseif string.find(scale_table[1],"%%") then
-        scale = string.cut(scale_table[1],#scale_table[1] - 1) * num / 100
-    else
-        scale = string.gsub(scale_table[1],"px","")
-    end
-    scale = math.floor(scale + 0.5)
-    return scale
-end
+dl.settings = dl.settings or { hidden = false, width = 30 }
 
-local function rewrap_window(name)
-    local info = windowManager.list[name]
-    local buffer = name .. "_windowManager_buffer"
-    local wrap = math.floor(windowManager.getValue(name,"width") / calcFontSize(info.font))
-    local line, moved
-    setWindowWrap(name,wrap)
-    clearWindow(name)
-    line = 0
-    moved = moveCursor(buffer,1,line)
-    while moved do
-        selectCurrentLine(buffer)
-        copy(buffer)
-        line = line + 1
-        moved = moveCursor(buffer,1,line)
-        appendBuffer(name)
+function dl.loadSettings()
+  if io.exists(SETTINGS_FILE) then
+    local saved = {}
+    table.load(SETTINGS_FILE, saved)
+    for k, v in pairs(saved) do
+      dl.settings[k] = v
     end
-end
-
-function windowManager.simplify(measure)
-    measure = string.gsub(measure,"%s*-%s*([%d%%]+)"," + -%1")
-    measure = string.gsub(measure,"%-%-","")
-    measure = string.gsub(measure,"%+%s*%+","+")
-    measure = string.gsub(measure,"^%s*%+","")
-    local measure_table = string.split(measure,"+")
-    local percent, pixel = 0,0
-    for k,v in ipairs(measure_table) do
-        v = string.trim(v)
-        if string.find(v,"%%") then
-            v = string.gsub(v,"%%","")
-            if not tonumber(v) then display(measure) end
-            percent = percent + v
-        elseif v ~= "" then
-            v = string.gsub(v,"px","")
-            if not tonumber(v) then display(measure) end
-            pixel = pixel + v
-        end
-    end
-    percent = math.floor(1000 * percent + .5) / 1000
-    pixel = math.floor(1000 * pixel + .5) / 1000
-    if percent == 0 then
-        measure = pixel .. "px"
-    elseif pixel == 0 then
-        measure = percent .. "%"
-    else
-        measure = percent .. "% + " .. pixel .. "px"
-    end
-    return measure
-end
-
-function windowManager.math(measure,num,op)
-    if not table.contains({"multiply","divide", "add", "subtract"},op) then
-        error("windowManager.math: bad argument #3 \"operation\", must be add, subtract, multiply or divide",2)
-    end
-    if op == "divide" or op == "multiply" then
-        if string.find(num,"%%") then
-            num = string.gsub(num,"%%","") / 100
-        end
-        if not tonumber(num) then
-            error("windowManager.math: bad argument #2 \"num\", must be a number",2)
-        end
-        num = tonumber(num)
-        measure = string.gsub(measure,"%s*-%s*([%d%%]+)"," + -%1")
-        measure = string.gsub(measure,"%+%s*%+","+")
-        measure = string.gsub(measure,"^%s*%+","")
-        local measure_table = string.split(measure,"+")
-        if op == "divide" then num = 1 / num end
-        for k,v in ipairs(measure_table) do
-            v = string.trim(v)
-            v = (string.gsub(v,"([%d%.]+).*","%1") * num) .. string.gsub(v,".*[%d%.]+(.*)","%1")
-            measure_table[k] = v
-        end
-        measure = table.concat(measure_table," + ")
-    else
-        if op == "subtract" then
-            num = windowManager.math(num,"-1","multiply")
-        end
-        measure = measure .. " + " .. num
-        measure = string.gsub(measure,"([^%s%+%-]+)%s*-%s*([%d%.%-]+)","%1 + -%2")
-    end
-    return windowManager.simplify(measure)
-end
-
-function windowManager.create(name, window_type, ...)
-    local tbl = {}
-    local is_table = false
-    if type(name) == "table" then
-        table.update(tble,name)
-        name = tbl.name
-        window_type = tbl.type
-        is_table = true
-    end
-    if type(window_type) ~= "string" then
-        error("windowManager.create: bad argument #2 \"type\", must be string.",2)
-    end
-    window_type = string.lower(window_type)
-    if not table.contains({"label","miniconsole","gauge","mapper","menu","autowrap"},window_type) then
-        error("windowManager.create: invalid type",2)
-    end
-    if window_type == "label" then
-        createLabel(name, 0,0,0,0,1)
-    elseif window_type == "miniconsole" then
-        createMiniConsole(name,0,0,0,0)
-    elseif window_type == "gauge" then
-        createGauge(name,0,0,0,0)
-    elseif window_type == "menu" then
-        createMenu(name,0,0,0,0)
-    elseif window_type == "autowrap" then
-        createMiniConsole(name,0,0,0,0)
-        createBuffer(name .. "_windowManager_buffer")
-        setWindowWrap(name .. "_windowManager_buffer",1000)
-    end
-    if is_table then
-        return windowManager.add(tbl)
-    else
-        return windowManager.add(name, window_type, ...)
-    end
-end
-
-function windowManager.makeBuffer(name)
-    createBuffer(name .. "_windowManager_buffer")
-    setWindowWrap(name .. "_windowManager_buffer",1000)
-end
-
-function windowManager.add(name, window_type, x, y, w, h, origin, font)
-    local tbl = {}
-    if type(name) == "table" then
-        tbl = table.update(tbl,name)
-        name = tbl.name
-        x = tbl.x
-        y = tbl.y
-        w = tbl.width
-        h = tbl.height
-        origin = tbl.origin
-        window_type = tbl.type
-        font = tbl.font_size
-        tbl = {}
-    end
-    font = font or 10
-    if not name then
-        error("windowManager.add: bad argument #1 \"name\".",2)
-    end
-    windowManager.list[name] = nil
-    if type(window_type) ~= "string" then
-        error("windowManager.add: bad argument #2 \"type\", must be string.",2)
-    end
-    window_type = string.lower(window_type)
-    if not table.contains({"label","miniconsole","gauge","mapper","menu","autowrap"},window_type) then
-        error("windowManager.add: invalid type",2)
-    end
-    if not (x and y and w and h) then
-        error("windowManager.add: must have x, y, width, and height.",2)
-    end
-    origin = origin or "topleft"
-    origin = string.lower(origin)
-    if not table.contains({"topleft","topright","bottomleft","bottomright"},origin) then
-        error("windowManager.add: bad argument #7 \"origin\".",2)
-    end
-    x = windowManager.simplify(x)
-    y = windowManager.simplify(y)
-    w = windowManager.simplify(w)
-    h = windowManager.simplify(h)
-    tbl = {
-        type = window_type,
-        x = x, y = y, h = h, w = w,
-        origin = origin}
-    if window_type == "autowrap" then
-        tbl.font = font
-        setMiniConsoleFontSize(name, font)
-    end
-    windowManager.list[name] = tbl
-    windowManager.refresh(name)
-end
-
-function windowManager.remove(name)
-    windowManager.list[name] = nil
-end
-
-function windowManager.refresh(name, main_w, main_h)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.refresh: no such window.",2) end
-    local x,y,w,h,origin,win_type = info.x, info.y, info.w, info.h, info.origin, info.type
-    if not (main_w and main_h) then
-        main_w, main_h = getMainWindowSize()
-    end
-    w = calcScaledNum(w,main_w)
-    x = calcScaledNum(x,main_w)
-    h = calcScaledNum(h,main_h)
-    y = calcScaledNum(y,main_h)
-    if string.find(origin,"right") then
-        x = main_w - x - w
-    end
-    if string.find(origin,"bottom") then
-        y = main_h - y - h
-    end
-    if win_type == "gauge" then
-        moveGauge(name,x,y)
-        resizeGauge(name,w,h)
-    elseif win_type == "mapper" then
-        if not info.hide then
-            createMapper(x,y,w,h)
-        end
-    elseif win_type == "menu" then
-        moveMenu(name,x,y)
-        resizeMenu(name,w,h)
-    else
-        moveWindow(name,x,y)
-        resizeWindow(name,w,h)
-        if win_type == "autowrap" then
-            rewrap_window(name)
-        end
-    end
-end
-
-function windowManager.resize(name, w, h)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.resize: no such window.",2) end
-    if not (w and h) then error("windowManager.resize: must have both width and height.",2) end
-    w = windowManager.simplify(w)
-    h = windowManager.simplify(h)
-    windowManager.list[name].w = w
-    windowManager.list[name].h = h
-    windowManager.refresh(name)
-end
-
-function windowManager.move(name, x, y)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.move: no such window.",2) end
-    if not (x and y) then error("windowManager.move: must have both x and y.",2) end
-    x = windowManager.simplify(x)
-    y = windowManager.simplify(y)
-    windowManager.list[name].x = x
-    windowManager.list[name].y = y
-    windowManager.refresh(name)
-end
-
-function windowManager.relocate(name, origin)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.relocate: no such window.",2) end
-    origin = origin or "topleft"
-    origin = string.lower(origin)
-    if not table.contains({"topleft","topright","bottomleft","bottomright"},origin) then
-        error("windowManager.relocate: bad argument #2 \"origin\".",2)
-    end
-    windowManager.list[name].origin = origin
-    windowManager.refresh(name)
-end
-
-function windowManager.hide(name)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.hide: no such window.",2) end
-    local info = windowManager.list[name]
-    if info.type == "gauge" then
-        hideGauge(name)
-    elseif info.type == "mapper" then
-        windowManager.list[name].hide = true
-        createMapper(0,0,0,0)
-    elseif info.type == "menu" then
-        hideMenu(name)
-    else
-        hideWindow(name)
-    end
-end
-
-function windowManager.show(name)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.show: no such window.",2) end
-    local info = windowManager.list[name]
-    if info.type == "gauge" then
-        showGauge(name)
-    elseif info.type == "mapper" then
-        windowManager.list[name].hide = false
-        windowManager.refresh(name)
-    elseif info.type == "menu" then
-        showMenu(name)
-    else
-        showWindow(name)
-    end
-end
-
-function windowManager.setFontSize(name, font_size)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.setFontSize: no such window.",2) end
-    windowManager.list[name].font = font_size
-    setMiniConsoleFontSize(name, font_size)
-    windowManager.refresh(name)
-end
-
-function windowManager.clear(name)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.clear: no such window.",2) end
-    clearWindow(name)
-    clearWindow(name .. "_windowManager_buffer")
-end
-
-function windowManager.append(name)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.append: no such window.",2) end
-    appendBuffer(name)
-    appendBuffer(name .. "_windowManager_buffer")
-end
-
-function windowManager.echo(name, text)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.echo: no such window.",2) end
-    echo(name, text)
-    echo(name .. "_windowManager_buffer", text)
-end
-
-function windowManager.cecho(name, text)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.cecho: no such window.",2) end
-    cecho(name, text)
-    cecho(name .. "_windowManager_buffer", text)
-end
-
-function windowManager.hecho(name, text)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.hecho: no such window.",2) end
-    hecho(name, text)
-    hecho(name .. "_windowManager_buffer", text)
-end
-
-function windowManager.decho(name, text)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.decho: no such window.",2) end
-    decho(name, text)
-    decho(name .. "_windowManager_buffer", text)
-end
-
-function windowManager.getValue(name, value)
-    local info = windowManager.list[name]
-    if not info then error("windowManager.getValue: no such window.",2) end
-    if not table.contains({"x","y","width","height","w","h","origin"},value) then
-        error("windowManager.getValue: no such value.",2)
-    end
-    local sys_w, sys_h = getMainWindowSize()
-    if value == "width" then value = "w" end
-    if value == "height" then value = "h" end
-    local tmp = windowManager.list[name][value]
-    if value == "w" or value == "x" then
-        tmp = calcScaledNum(tmp,sys_w)
-    elseif value == "h" or value == "y" then
-        tmp = calcScaledNum(tmp,sys_h)
-    end
-    return tmp
-end
-
-function windowManager.refreshAll()
-    local main_w, main_h = getMainWindowSize()
-    for k,v in pairs(windowManager.list) do
-        windowManager.refresh(k, main_w, main_h)
-    end
-end
-
-registerAnonymousEventHandler("sysWindowResizeEvent", "windowManager.refreshAll")</script>
-				<eventHandlerList />
-			</Script>
-			<Script isActive="yes" isFolder="no">
-				<name>Generic Mapper Config</name>
-				<packageName></packageName>
-				<script>map.configs = map.configs or {}
-map.configs.show_map = false
-map.configs.speedwalk_random = false
-map.configs.speedwalk_delay = 0.01</script>
-				<eventHandlerList />
-			</Script>
-			<Script isActive="yes" isFolder="no">
-				<name>SetGMCPRoomName</name>
-				<packageName></packageName>
-				<script>function SetGMCPRoomName()
-  map.prompt.hash = gmcp.Room.Info.num and tostring(gmcp.Room.Info.num)
-  map.prompt.room = gmcp.Room.Info.name
-  map.prompt.exits = gmcp.Room.Info.exits and table.concat(table.keys(gmcp.Room.Info.exits), " ")
-  raiseEvent("onNewRoom",map.prompt.exits)
-  if map.mapping and gmcp.Room.Info.area and gmcp.Room.Info.area ~= map.currentArea then
-    map.set_area(gmcp.Room.Info.area)
   end
-end</script>
-				<eventHandlerList>
-					<string>gmcp.Room.Info</string>
-				</eventHandlerList>
-			</Script>
-		</ScriptGroup>
-		<ScriptGroup isActive="yes" isFolder="yes">
-			<name>YATCOCONFIG</name>
-			<packageName></packageName>
-			<script>demonnic = demonnic or {}
-demonnic.chat = demonnic.chat or {}
-demonnic.chat.config = demonnic.chat.config or {}</script>
-			<eventHandlerList />
-			<Script isActive="yes" isFolder="no">
-				<name>Configuration Options (container)</name>
-				<packageName></packageName>
-				<script>dhb.ui.mapchat = Geyser.Container:new({
-  name = "dhb.ui.mapchat",
-	x = "-40%",
-  y = 0,
-  width = "30%",
-  height = "80%"
-})
+end
 
-dhb.ui.chat = Geyser.Container:new({
-  name = "dhb.ui.chat",
-	x = 0,
-	y = "50%",
-	width = "100%",
-	height = "50%"
-}, dhb.ui.mapchat)
+function dl.saveSettings()
+  table.save(SETTINGS_FILE, dl.settings)
+end
 
-dhb.ui.mapper = Geyser.Mapper:new({
-  name = "dhb.ui.mapper",
-  x = 0, y = 0,
-  width = "100%",
-  height = "50%",
-}, dhb.ui.mapchat)
+-- The panel speaks the language the player picked in the game, which arrives
+-- with every prompt.
+function dl.lang()
+  local l = dl.prompt.lang
+  if dl.strings[l] then
+    return l
+  end
+  return "en"
+end
 
--- reposition timer after YATCO is up
-tempTimer(1, function() dhb.ui.mapper:reposition() end)</script>
-				<eventHandlerList />
-			</Script>
-			<Script isActive="yes" isFolder="no">
-				<name>Configuration Options</name>
-				<packageName></packageName>
-				<script>--[[
-This is a table of channels you would like.
-AKA the place you tell the script what tabs you want.
-Each entry must be a string. The defaults should be a pretty effective guide.
-]]
+function dl.t(key)
+  return dl.strings[dl.lang()][key] or dl.strings.en[key] or key
+end
 
-demonnic.chat.config.channels = {
-  "All",
-	"OOC",
-  "City",
-  "Auction",
+-- "none" is how the server says a prompt block is empty.
+function dl.has(v)
+  return v ~= nil and v ~= "none" and v ~= ""
+end
+
+-- ANSI colour digits the server uses in the prompt (hit_clr and the like),
+-- as the bright variants the web client draws.
+dl.ansi = {
+  ["0"] = "#808080", ["1"] = "#ff5555", ["2"] = "#55ff55", ["3"] = "#ffff55",
+  ["4"] = "#5555ff", ["5"] = "#ff55ff", ["6"] = "#55ffff", ["7"] = "#ffffff",
 }
 
---[[
-This is where all of the configuration options can be set. 
-Anything I've put in this script object can be changed, but please do pay attention to what you're doing.
-If you change one of the values to something it shouldn't be, you could break it. 
-]]
-
---This is where you tell it to use tabbed chat.
-demonnic.chat.use = true
-
---[[
-This is where you put what container to put the tabbed chat stuff into. Make it
-equal to the actual container object you want it in, or false for none. Defaults to false
-Which is to say if you want to put the tabbed chat stuff into a container made using 
-uiRight = Geyser.Container:new()
-
-you would put
-
-demonnic.chat.useContainer = uiRight
-
-and if you don't want it in a container you would put
-
-demonnic.chat.useContainer = false
-]]
-
-demonnic.chat.useContainer = dhb.ui.chat
-
---[[
-The timestamp option is set here.
-Set to false if you do not want any timestamps displayed for chat.
-If you do want it displayed, set to the string for the format you wish. 
-see http://wiki.mudlet.org/w/Manual:Lua_Functions#getTime for information
-how to format the string
-]]
-demonnic.chat.config.timestamp = "HH:mm:ss"
-
---[[ Should we use our own colors for the timestamp?
-Set to true if you want to specify foreground and background colors
-for the timestamp.
-Set to false if you want the timestamps background and foreground
-colors to match that of the mud output.
-]]
-demonnic.chat.config.timestampCustomColor = false
---[[
-and what foreground color? You can either use one of the 'named' colors
-(see http://wiki.mudlet.org/images/c/c3/ShowColors.png for available colors)
-demonnic.chat.config.timestampFG = "slate_grey"
-
-Or you can use a table of R,G,B values. 
-demonnic.chat.config.timestampFG = {
-  255,
-    0,
-    0,
+dl.colors = {
+  title = "#b48cff",
+  text = "#c0c0c0",
+  dim = "#707070",
+  zone = "#00aaaa",
+  room = "#55ffff",
+  bg = "#14111c",
+  button = "#2a2238",
+  buttonFight = "#5a1e28",
 }
-then the foreground for the timestamp would be 255 read, 100 green, and 0 blue
-]]
-demonnic.chat.config.timestampFG = "red"
-
---and background? Same rules as for the foreground above
-demonnic.chat.config.timestampBG = "blue"
-
---[[
-This is where you say what corner of the screen you want the tabbed chat on
-Valid settings are "topright", "topleft", "bottomright", "bottomleft"
-]]--
-demonnic.chat.config.location = "topright"
-
-
-
---Set this to the name of the channel you want to have everything sent to. 
---Per the default, this would be the "All" channel. If you have a different name for it:
---
---demonnic.chat.config.Alltab = "Bucket"  
---
---And if you don't want it turned on at all:
---
---demonnic.chat.config.Alltab = false
-
-demonnic.chat.config.Alltab = "All"
-
---Set this to the name of the channel you want to display your map. Set to "" if you
---don't want to display the map in your YATCO tabs
-demonnic.chat.config.Maptab = ""
-
-
----------------------------------------------------------------------------------
---                                                                             --
---The infamous blinking stuff!!!                                               --
---                                                                             --
----------------------------------------------------------------------------------
-
---[[
-Do you want tabs to blink when you get new messages, until you click on the tab?
-True if yes, false if no.
-]]
-demonnic.chat.config.blink = true
-
---How long (in seconds) between blinks? For example, 1 would mean a 1 second pause in between blinks.
-demonnic.chat.config.blinkTime = 3
-
---Blink if the bucket tab ("All" by default, but configured above) is in focus?
-demonnic.chat.config.blinkFromAll = false
-
-
-
-
---Font size for the chat messages
-
-demonnic.chat.config.fontSize = 9
-
---[[
-Should we preserve the formatting of the text. 
-Or should we set the background of it to match the window color?
-Set this to false if you want the background for all chat to match the background of the window.
-Useful if you change the background from black, and don't like the way the pasted chat makes blocks in it
-]]
-
-demonnic.chat.config.preserveBackground = false
-
---[[
-Gag the chat lines in the main window?
-defaults to false, set to true if you want to gag.
-]]
-
-demonnic.chat.config.gag = false
-
---[[
-Number of lines of chat visible at once. 
-Will determine how tall the window for the chats is.
-]]
-
-demonnic.chat.config.lines = 45
-
---[[
-Number of characters to wrap the chatlines at.
-This will also determine how wide the chat windows are.
-]]
-
-demonnic.chat.config.width = 60
-
---[[
-Set the color for the active tab. R,G,B format.
-The default here is a brightish green
-]]
-
-demonnic.chat.config.activeColors = {
-  r = 0,
-  g = 180,
-  b = 0,
-}
-
---[[
-Set the color for the inactive tab. R,G,B format.
-The default here is a drab grey
-]]
-
-demonnic.chat.config.inactiveColors = {
-  r = 60,
-  g = 60,
-  b = 60,
-}
-
---[[
-Set the color for the chat window itself. R,G,B format.
-Defaulted to the black of my twisted hardened soul. Or something.
-]]
-
-demonnic.chat.config.windowColors = {
-  r = 0,
-  g = 0,
-  b = 0,
-}
-
---[[
-Set the color for the text on the active tab. Uses color names.
-Set the default to purple. So the tab you're looking at, by default will be purple on bright green. 
-Did I mention I'm a bit colorblind?
-]]
-
-demonnic.chat.config.activeTabText = "purple"
-
---[[
-Set the color for the text on the inactive tabs. Uses color names.
-Defaulted this to white. So the tabs you're not looking at will be white text on boring grey background.
-]]
-
-demonnic.chat.config.inactiveTabText = "white"
-
---[[
-have to make sure a currentTab is set... 
-so we'll use the one for the bucket, or the first one in the channels table
-Or, you know... what it's currently set to, if it's already set.
-]]
-demonnic.chat.currentTab = demonnic.chat.currentTab or demonnic.chat.config.Alltab or demonnic.chat.config.channels[1]
 </script>
 				<eventHandlerList />
 			</Script>
-		</ScriptGroup>
-		<ScriptGroup isActive="yes" isFolder="yes">
-			<name>Demonnic</name>
-			<packageName></packageName>
-			<script></script>
-			<eventHandlerList />
-			<ScriptGroup isActive="yes" isFolder="yes">
-				<name>Shared</name>
+			<Script isActive="yes" isFolder="no">
+				<name>strings</name>
 				<packageName></packageName>
-				<script>--Bootstrapping variables/etc. Don't touch this unless you really know what you're doing
-
---I mean it. I'll point. AND laugh. loudly. 
-demonnic = demonnic or {}
-demonnic.config = demonnic.config or {}
-demonnic.balances = demonnic.balances or {}
-demonnic.balances.balance = demonnic.balances.balance or 1
-demonnic.balances.equilibrium = demonnic.balances.equilibrium or 1
-demonnic.debug = demonnic.debug or {}
-demonnic.debug.active = demonnic.debug.active or nil
-demonnic.debug.categories = demonnic.debug.categories or { }
-
-
-function demonnic:echo(msg)
- cecho(string.format("\n&lt;blue&gt;(&lt;green&gt;Demonnic&lt;blue&gt;):&lt;white&gt; %s", msg))
-end</script>
+				<script>-- Panel labels in the three game languages. Copied from the web client
+-- (mudjs/src/i18n.js) so both clients use the same words.
+dl = dl or {}
+dl.strings = {
+  en = {
+    ["aff.cln"] = "Clan",
+    ["aff.det"] = "Detect",
+    ["aff.enh"] = "Boost",
+    ["aff.mal"] = "Curse",
+    ["aff.pro"] = "Prot",
+    ["aff.title"] = "Affects on you",
+    ["aff.trv"] = "Travel",
+    ["cmd.commands"] = "Commands",
+    ["cmd.equip"] = "Equipment",
+    ["cmd.flee"] = "Flee",
+    ["cmd.inv"] = "Inventory",
+    ["cmd.look"] = "Look",
+    ["cmd.magic"] = "Spells",
+    ["cmd.practice"] = "Practice",
+    ["cmd.quests"] = "Quests",
+    ["cmd.recall"] = "Recall",
+    ["cmd.score"] = "Score",
+    ["cmd.skills"] = "Skills",
+    ["cmd.title"] = "Commands",
+    ["grp.exp"] = "Exp",
+    ["grp.health"] = "Health",
+    ["grp.lvl"] = "Lvl",
+    ["grp.name"] = "Name",
+    ["grp.title"] = "Group",
+    ["loc.exits"] = "exits:",
+    ["loc.title"] = "Your location",
+    ["par.ac"] = "AC",
+    ["par.cha"] = "Cha",
+    ["par.con"] = "Con",
+    ["par.dam"] = "Dam",
+    ["par.dex"] = "Dex",
+    ["par.hit"] = "Hit",
+    ["par.int"] = "Int",
+    ["par.save"] = "Save",
+    ["par.str"] = "Str",
+    ["par.title"] = "Your stats",
+    ["par.wis"] = "Wis",
+    ["qst.min"] = "min",
+    ["qst.title"] = "Questor task:",
+    ["st.enemy"] = "Enemy",
+    ["st.health"] = "Health",
+    ["st.mana"] = "Mana",
+    ["st.moves"] = "Moves",
+    ["tab.all"] = "All",
+    ["tab.group"] = "Group",
+    ["tab.personal"] = "Tells",
+    ["tab.room"] = "Room",
+    ["tab.world"] = "World",
+    ["tw.title"] = "Weather &amp; time",
+    ["who.clan"] = "Clan",
+    ["who.name"] = "Name",
+    ["who.race"] = "Race",
+    ["who.title"] = "Online now",
+  },
+  ua = {
+    ["aff.cln"] = "Клан",
+    ["aff.det"] = "Виявл",
+    ["aff.enh"] = "Підсил",
+    ["aff.mal"] = "Негат",
+    ["aff.pro"] = "Захист",
+    ["aff.title"] = "Впливи на тебе",
+    ["aff.trv"] = "Трансп",
+    ["cmd.commands"] = "Команди",
+    ["cmd.equip"] = "Одяг",
+    ["cmd.flee"] = "Втекти",
+    ["cmd.inv"] = "Інвентар",
+    ["cmd.look"] = "Дивитись",
+    ["cmd.magic"] = "Магія",
+    ["cmd.practice"] = "Практика",
+    ["cmd.quests"] = "Завдання",
+    ["cmd.recall"] = "Поверн.",
+    ["cmd.score"] = "Стан",
+    ["cmd.skills"] = "Уміння",
+    ["cmd.title"] = "Команди",
+    ["grp.exp"] = "Досв.",
+    ["grp.health"] = "Здор.",
+    ["grp.lvl"] = "Рів.",
+    ["grp.name"] = "Імʼя",
+    ["grp.title"] = "Група",
+    ["loc.exits"] = "виходи:",
+    ["loc.title"] = "Твоє місцезнаходження",
+    ["par.ac"] = "Броня",
+    ["par.cha"] = "Харизма",
+    ["par.con"] = "Статура",
+    ["par.dam"] = "Шкода",
+    ["par.dex"] = "Сприт",
+    ["par.hit"] = "Влучність",
+    ["par.int"] = "Розум",
+    ["par.save"] = "Чари",
+    ["par.str"] = "Сила",
+    ["par.title"] = "Твої параметри",
+    ["par.wis"] = "Мудр",
+    ["qst.min"] = "хв",
+    ["qst.title"] = "Завдання квестора:",
+    ["st.enemy"] = "Ворог",
+    ["st.health"] = "Здоровʼя",
+    ["st.mana"] = "Мана",
+    ["st.moves"] = "Кроки",
+    ["tab.all"] = "Усе",
+    ["tab.group"] = "Група",
+    ["tab.personal"] = "Особисте",
+    ["tab.room"] = "Кімната",
+    ["tab.world"] = "Світ",
+    ["tw.title"] = "Погода і час",
+    ["who.clan"] = "Клан",
+    ["who.name"] = "Імʼя",
+    ["who.race"] = "Раса",
+    ["who.title"] = "Зараз у світі",
+  },
+  ru = {
+    ["aff.cln"] = "Клан",
+    ["aff.det"] = "Обнар",
+    ["aff.enh"] = "Усилен",
+    ["aff.mal"] = "Отриц",
+    ["aff.pro"] = "Защита",
+    ["aff.title"] = "Воздействия на тебе",
+    ["aff.trv"] = "Трансп",
+    ["cmd.commands"] = "Команды",
+    ["cmd.equip"] = "Одежда",
+    ["cmd.flee"] = "Сбежать",
+    ["cmd.inv"] = "Инвентарь",
+    ["cmd.look"] = "Смотреть",
+    ["cmd.magic"] = "Магия",
+    ["cmd.practice"] = "Практика",
+    ["cmd.quests"] = "Задания",
+    ["cmd.recall"] = "Возврат",
+    ["cmd.score"] = "Счет",
+    ["cmd.skills"] = "Умения",
+    ["cmd.title"] = "Команды",
+    ["grp.exp"] = "Опыт",
+    ["grp.health"] = "Здор.",
+    ["grp.lvl"] = "Ур.",
+    ["grp.name"] = "Имя",
+    ["grp.title"] = "Группа",
+    ["loc.exits"] = "выходы:",
+    ["loc.title"] = "Твое местоположение",
+    ["par.ac"] = "Броня",
+    ["par.cha"] = "Обая",
+    ["par.con"] = "Слож",
+    ["par.dam"] = "Урон",
+    ["par.dex"] = "Ловк",
+    ["par.hit"] = "Точность",
+    ["par.int"] = "Ум",
+    ["par.save"] = "Заклин",
+    ["par.str"] = "Сила",
+    ["par.title"] = "Твои параметры",
+    ["par.wis"] = "Мудр",
+    ["qst.min"] = "мин",
+    ["qst.title"] = "Задание квестора:",
+    ["st.enemy"] = "Противник",
+    ["st.health"] = "Здоровье",
+    ["st.mana"] = "Мана",
+    ["st.moves"] = "Шаги",
+    ["tab.all"] = "Всё",
+    ["tab.group"] = "Группа",
+    ["tab.personal"] = "Личное",
+    ["tab.room"] = "Комната",
+    ["tab.world"] = "Мир",
+    ["tw.title"] = "Погода и время",
+    ["who.clan"] = "Клан",
+    ["who.name"] = "Имя",
+    ["who.race"] = "Раса",
+    ["who.title"] = "Сейчас в мире",
+  },
+}
+</script>
 				<eventHandlerList />
-				<Script isActive="yes" isFolder="no">
-					<name>Debugging</name>
-					<packageName></packageName>
-					<script>--Adds debugging functionality 
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>layout</name>
+				<packageName></packageName>
+				<script>-- The right-hand column: chat tabs on top, then the gauges, then the info
+-- panel, then the command buttons. Built once; dl.ui.render() refills it.
 
-function demonnic:Debug(category,debugData)
-   if category then
-      if table.contains(demonnic.debug.categories, category) then
-         if type(debugData) == "table" then
-            demonnic:echo("&lt;red&gt;DEBUG " .. category .. ":&lt;white&gt;")
-            display(debugData)
-         elseif type(debugData) == "string" or type(debugData) == "number" then
-            demonnic:echo("&lt;red&gt;DEBUG " .. category .. ":&lt;white&gt; " .. debugData .. "\n" )
-         else
-            demonnic:echo("&lt;red&gt;DEBUG " .. category .. ":&lt;white&gt; " .. tostring(debugData) .. "\n" )
-         end
-      end
-   else
-      if type(debugData) == "table" then
-         demonnic:echo("&lt;red&gt;DEBUG:&lt;white&gt;")
-         display(debugData)
-      elseif type(debugData) == "string" or type(debugData) == "number" then
-         demonnic:echo("&lt;red&gt;DEBUG:&lt;white&gt; " .. debugData)
-      else
-         demonnic:echo("&lt;red&gt;DEBUG:&lt;white&gt; " .. tostring(debugData))
-      end
-   end
+local GAUGE_H = 20
+local GAUGES_H = 4 * (GAUGE_H + 2)
+local TABS_H = 24
+local CHAT_PCT = 32
+local BUTTONS_H = 6 * 26
+
+local function consoleStyle(console)
+  console:setColor(dl.colors.bg)
+  console:setFontSize(math.max(getFontSize() - 1, 8))
+  console:enableAutoWrap()
 end
 
-function demonnic:printDebug(category, debugData)
-   if not demonnic.debug.active then return end
-   demonnic:Debug(category, debugData)
+local function gauge(name, y, r, g, b)
+  local gg = Geyser.Gauge:new({
+    name = "dl." .. name,
+    x = 4, y = y, width = "100%-8", height = GAUGE_H,
+  }, dl.ui.root)
+  gg:setColor(r, g, b)
+  gg.back:setStyleSheet("background-color: #201a2c; border-radius: 3px;")
+  gg.text:setStyleSheet("color: white; qproperty-alignment: 'AlignCenter';")
+  return gg
 end
 
-function demonnic:toggleDebug()
-   if demonnic.debug.active then demonnic.debug.active = nil
-   else demonnic.debug.active = true
-   end
-   demonnic:echo("Debugging is currently " .. (( demonnic.debug.active and "&lt;green&gt;ON&lt;white&gt;") or "&lt;red&gt;OFF&lt;white&gt;"))
+function dl.ui.applyBorder()
+  if dl.settings.hidden or not dl.ui.root then
+    setBorderRight(0)
+    return
+  end
+  local w = getMainWindowSize()
+  setBorderRight(math.floor(w * dl.settings.width / 100))
 end
 
-function demonnic:watchCategory( category )
-   if table.contains(demonnic.debug.categories, category) then
-      for i,v in ipairs(demonnic.debug.categories) do
-         if v == category then
-            table.remove(demonnic.debug.categories, i)
-         end
-      end
-      demonnic:echo("No longer watching the '&lt;red&gt;"..category.."&lt;white&gt;' category.") 
-   else
-      table.insert(demonnic.debug.categories, category)
-      demonnic:echo("Now watching the '&lt;red&gt;"..category.."&lt;white&gt;' category.")
-   end
-   demonnic:echo("Debugging is currently " .. (( demonnic.debug.active and "&lt;green&gt;ON&lt;white&gt;") or "&lt;red&gt;OFF&lt;white&gt;"))
+function dl.ui.build()
+  if dl.ui.root then
+    return
+  end
+  local w = dl.settings.width
+
+  dl.ui.root = Geyser.Container:new({
+    name = "dl.root", x = -w .. "%", y = 0, width = w .. "%", height = "100%",
+  })
+
+  dl.ui.tabBar = Geyser.HBox:new({
+    name = "dl.tabBar", x = 0, y = 0, width = "100%", height = TABS_H,
+  }, dl.ui.root)
+
+  dl.ui.chatBox = Geyser.Container:new({
+    name = "dl.chatBox", x = 0, y = TABS_H, width = "100%", height = CHAT_PCT .. "%-" .. TABS_H,
+  }, dl.ui.root)
+
+  local gy = CHAT_PCT .. "%+"
+  dl.ui.hp = gauge("hp", gy .. 2, 170, 30, 30)
+  dl.ui.mana = gauge("mana", gy .. (2 + GAUGE_H + 2), 40, 70, 190)
+  dl.ui.move = gauge("move", gy .. (2 + 2 * (GAUGE_H + 2)), 40, 150, 60)
+  dl.ui.enemy = gauge("enemy", gy .. (2 + 3 * (GAUGE_H + 2)), 200, 120, 30)
+
+  dl.ui.info = Geyser.MiniConsole:new({
+    name = "dl.info",
+    x = 0, y = gy .. (GAUGES_H + 4),
+    width = "100%", height = (100 - CHAT_PCT) .. "%-" .. (GAUGES_H + 4 + BUTTONS_H),
+  }, dl.ui.root)
+  consoleStyle(dl.ui.info)
+
+  dl.ui.buttonBox = Geyser.Container:new({
+    name = "dl.buttons", x = 0, y = -BUTTONS_H, width = "100%", height = BUTTONS_H,
+  }, dl.ui.root)
+
+  dl.chat.build()
+
+  if dl.settings.hidden then
+    dl.ui.root:hide()
+  end
+  dl.ui.applyBorder()
 end
 
-function demonnic:listCategories()
-   if #demonnic.debug.categories &gt; 0 then
-      demonnic:echo("You are currently watching the following categories:\n" .. table.concat(demonnic.debug.categories,", ") )
-   else
-      demonnic:echo("You are not watching any debugs.")
-   end
+function dl.ui.consoleStyle(console)
+  consoleStyle(console)
+end
+
+function dl.ui.setHidden(hidden)
+  dl.settings.hidden = hidden
+  dl.saveSettings()
+  if not dl.ui.root then
+    return
+  end
+  if hidden then
+    dl.ui.root:hide()
+  else
+    dl.ui.root:show()
+    dl.ui.render()
+  end
+  dl.ui.applyBorder()
+end
+
+function dl.ui.setWidth(pct)
+  dl.settings.width = pct
+  dl.saveSettings()
+  if not dl.ui.root then
+    return
+  end
+  dl.ui.root:move(-pct .. "%", 0)
+  dl.ui.root:resize(pct .. "%", "100%")
+  dl.ui.applyBorder()
+end
+
+function dl.ui.destroy()
+  if dl.ui.root then
+    dl.ui.root:hide()
+  end
+  setBorderRight(0)
+  -- A reinstall (every package update) runs the scripts again and must build
+  -- a fresh panel instead of finding this hidden one.
+  dl.ui.root = nil
+  dl.ui.buttons = {}
+  dl.ui.buttonSig = nil
+end
+
+function dl.ui.updateVitals()
+  if not dl.ui.root then
+    return
+  end
+  local p = dl.prompt
+  local function set(g, cur, max, key)
+    cur = tonumber(cur) or 0
+    max = tonumber(max) or 0
+    if max &lt;= 0 then
+      max = 1
+    end
+    g:setValue(math.max(cur, 0), max, string.format("%s %d/%d", dl.t(key), cur, max))
+  end
+  set(dl.ui.hp, p.hit, p.max_hit, "st.health")
+  set(dl.ui.mana, p.mana, p.max_mana, "st.mana")
+  set(dl.ui.move, p.move, p.max_move, "st.moves")
+
+  -- prompt.fight is the enemy's health in percent, 0 when not fighting.
+  local fight = tonumber(p.fight) or 0
+  if fight &gt; 0 then
+    dl.ui.enemy:show()
+    dl.ui.enemy:setValue(fight, 100, string.format("%s %d%%", dl.t("st.enemy"), fight))
+  else
+    dl.ui.enemy:hide()
+  end
 end
 </script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
-					<name>Geyser Additions</name>
-					<packageName></packageName>
-					<script>function Geyser.MiniConsole:clear()
-   clearWindow(self.name)
-end
-
-function Geyser.MiniConsole:append()
-  appendBuffer(self.name)
-end</script>
-					<eventHandlerList />
-				</Script>
-			</ScriptGroup>
-			<ScriptGroup isActive="yes" isFolder="yes">
-				<name>Tabbed Chat</name>
-				<packageName></packageName>
-				<script>--Do not remove the following lines. Or change them.
-demonnic = demonnic or {}
-demonnic.chat = demonnic.chat or {}
-demonnic.chat.tabsToBlink = demonnic.chat.tabsToBlink or {}
-demonnic.chat.tabs = demonnic.chat.tabs or {}
-demonnic.chat.windows = demonnic.chat.windows or {}
-if not demonnic.chat.config then
-  cecho("&lt;red:white&gt;YOU DO NOT HAVE THE YATCO CONFIG PACKAGE IN PLACE. THINGS WILL NOT WORK AS EXPECTED\n\n")
-  demonnic.chat.error = "NO CONFIG"
-end</script>
 				<eventHandlerList />
-				<Script isActive="yes" isFolder="no">
-					<name>Code</name>
-					<packageName></packageName>
-					<script>--[[
-If the label callbacks ever decide to start taking a function which is part of a table, 0then this will change.
-Or if it's modified to take actual functions. Anonymouse function clickcallback would be awfully nice.
-]]
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>panel</name>
+				<packageName></packageName>
+				<script>-- The info panel: the same blocks the web client shows, in the same order,
+-- redrawn from dl.prompt after every prompt.
 
-function demonnicChatSwitch(chat)
-  local r = demonnic.chat.config.inactiveColors.r
-  local g = demonnic.chat.config.inactiveColors.g
-  local b = demonnic.chat.config.inactiveColors.b
-  local newr = demonnic.chat.config.activeColors.r
-  local newg = demonnic.chat.config.activeColors.g
-  local newb = demonnic.chat.config.activeColors.b
-  local oldchat = demonnic.chat.currentTab
-  if demonnic.chat.currentTab ~= chat then
-    demonnic.chat.windows[oldchat]:hide()
-    demonnic.chat.tabs[oldchat]:setColor(r,g,b)
-    demonnic.chat.tabs[oldchat]:echo(oldchat, demonnic.chat.config.inactiveTabText, "c")
-    if demonnic.chat.config.blink and demonnic.chat.tabsToBlink[chat] then
-      demonnic.chat.tabsToBlink[chat] = nil
-    end
-    if demonnic.chat.config.blink and chat == demonnic.chat.config.Alltab then
-      demonnic.chat.tabsToBlink = {}
-    end
+local C = dl.colors
+local has = dl.has
+
+-- Who panel race and clan names, keyed by the short codes the server sends.
+-- Same table as mudjs windowletsConstants.js.
+local RACE_NAMES = {
+  ar = { en = "Arial", ru = "Ариал", ua = "Аріал" },
+  ce = { en = "Centa", ru = "Кентавр", ua = "Кентавр" },
+  cl = { en = "ClGia", ru = "ОбВелик", ua = "ХмВелет" },
+  da = { en = "D-Elf", ru = "ТемЭльф", ua = "ТемЕльф" },
+  dr = { en = "Drow", ru = "Дроу", ua = "Дроу" },
+  du = { en = "Duerg", ru = "Дуэргар", ua = "Дуергар" },
+  dw = { en = "Dwarf", ru = "Дварф", ua = "Дварф" },
+  el = { en = "Elf", ru = "Эльф", ua = "Ельф" },
+  fa = { en = "Faery", ru = "Фея", ua = "Фея" },
+  fe = { en = "Felar", ru = "Фелар", ua = "Фелар" },
+  fi = { en = "FiGia", ru = "ОгВелик", ua = "ВгВелет" },
+  fr = { en = "FrGia", ru = "ИнВелик", ua = "КрВелет" },
+  gi = { en = "Githy", ru = "Гитианк", ua = "Гітіанки" },
+  gn = { en = "Gnome", ru = "Гном", ua = "Гном" },
+  ha = { en = "H-Elf", ru = "ПолЭльф", ua = "НапЕльф" },
+  ho = { en = "Hobbi", ru = "Хоббит", ua = "Гобіт" },
+  hu = { en = "Human", ru = "Человек", ua = "Людина" },
+  ke = { en = "Kendr", ru = "Кендер", ua = "Кендер" },
+  ma = { en = "Mawg", ru = "Чес", ua = "Псюрень" },
+  ro = { en = "Rocks", ru = "Роксир", ua = "Роксір" },
+  sa = { en = "Satyr", ru = "Сатир", ua = "Сатир" },
+  st = { en = "StGia", ru = "ШтВелик", ua = "ШтВелет" },
+  sv = { en = "Svirf", ru = "Свирф", ua = "Свірф" },
+  tr = { en = "Troll", ru = "Тролль", ua = "Троль" },
+  ur = { en = "Urkhi", ru = "Урукха", ua = "Урукхай" },
+}
+
+local CLAN_NAMES = {
+  a = { en = "Artificers", ru = "Артель", ua = "Артіль" },
+  b = { en = "Fury", ru = "Ярости", ua = "Ярості" },
+  c = { en = "Chaos", ru = "Хаос", ua = "Хаос" },
+  e = { en = "Exiles", ru = "Изгои", ua = "Ізгої" },
+  f = { en = "Flowers", ru = "Цветы", ua = "Квіти" },
+  g = { en = "Ghosts", ru = "Призраки", ua = "Привиди" },
+  i = { en = "Invaders", ru = "Захватчики", ua = "Загарбники" },
+  k = { en = "Knights", ru = "Рыцари", ua = "Лицарі" },
+  l = { en = "Lions", ru = "Львы", ua = "Леви" },
+  o = { en = "Loners", ru = "Одиночки", ua = "Одинаки" },
+  r = { en = "Rulers", ru = "Правители", ua = "Правителі" },
+  s = { en = "Shalafi", ru = "Шалафи", ua = "Шалафі" },
+}
+
+local function localName(tbl, code)
+  local e = tbl[code]
+  if not e then
+    return code or ""
   end
-  demonnic.chat.tabs[chat]:setColor(newr,newg,newb)
-  demonnic.chat.tabs[chat]:echo(chat, demonnic.chat.config.activeTabText, "c")
-  demonnic.chat.windows[chat]:show()
-  demonnic.chat.currentTab = chat  
+  return e[dl.lang()] or e.en
 end
 
-function demonnic.chat:resetUI()
-  demonnic.chat.container = demonnic.chat.useContainer or Geyser.Container:new(demonnic.chat[demonnic.chat.config.location]())
-  demonnic.chat.tabBox = Geyser.HBox:new({
-    x=0,
-    y=0,
-    width = "100%",
-    height = "25px",
-    name = "DemonChatTabs",
-  },demonnic.chat.container)
+-- Affect families in the web order: curses first, bad news leads.
+local AFFECT_FAMILIES = { "mal", "pro", "det", "trv", "enh", "cln" }
 
+local function out(text, color)
+  dl.ui.info:hecho((color or C.text) .. text)
 end
 
-function demonnic.chat:create()
-  --reset the UI
-  demonnic.chat:resetUI()
-  --Set some variables locally to increase readability
-  local r = demonnic.chat.config.inactiveColors.r
-  local g = demonnic.chat.config.inactiveColors.g
-  local b = demonnic.chat.config.inactiveColors.b
-  local winr = demonnic.chat.config.windowColors.r
-  local wing = demonnic.chat.config.windowColors.g
-  local winb = demonnic.chat.config.windowColors.b
-
-  --iterate the table of channels and create some windows and tabs
-  for i,tab in ipairs(demonnic.chat.config.channels) do
-    demonnic.chat.tabs[tab] = Geyser.Label:new({
-      name=string.format("tab%s", tab),
-    }, demonnic.chat.tabBox)
-    demonnic.chat.tabs[tab]:echo(tab, demonnic.chat.config.inactiveTabText, "c")
-    demonnic.chat.tabs[tab]:setColor(r,g,b)
-    demonnic.chat.tabs[tab]:setClickCallback("demonnicChatSwitch", tab)
-    demonnic.chat.windows[tab] = Geyser.MiniConsole:new({
---      fontSize = demonnic.chat.config.fontSize,
-      x = 0,
-      y = 25,
-      height = "100%",
-      width = "100%",
-      name = string.format("win%s", tab),
-    }, demonnic.chat.container)
-    demonnic.chat.windows[tab]:setFontSize(demonnic.chat.config.fontSize)
-    demonnic.chat.windows[tab]:setColor(winr,wing,winb)
-    demonnic.chat.windows[tab]:setWrap(demonnic.chat.config.width)
-    demonnic.chat.windows[tab]:hide()
-  end
-  if demonnic.chat.config.Maptab and demonnic.chat.config.Maptab ~= "" then
-    demonnic.chat.mapWindow = Geyser.Mapper:new({
-      x = 0,
-      y = 0,
-      height = "100%",
-      width = "100%",
-    }, demonnic.chat.windows[demonnic.chat.config.Maptab])
-    demonnic.chat.windows[demonnic.chat.config.Maptab]:hide()
-  end
-  local showme = demonnic.chat.config.Alltab or demonnic.chat.config.channels[1]
-  demonnicChatSwitch(showme)
-  --start the blink timers, if enabled
-  if demonnic.chat.config.blink and not demonnic.chat.blinkTimerOn then
-    demonnic.chat:blink()
-  end
+local function title(text)
+  out("\n" .. text .. "\n", C.title)
 end
 
-function demonnic.chat:append(chat)
-  local r = demonnic.chat.config.windowColors.r
-  local g = demonnic.chat.config.windowColors.g
-  local b = demonnic.chat.config.windowColors.b
-  selectCurrentLine()
-  local ofr,ofg,ofb = getFgColor()
-  local obr,obg,obb = getBgColor()
-  if demonnic.chat.config.preserveBackground then
-    setBgColor(r,g,b)
+local function pad(s, n)
+  s = tostring(s or "")
+  local len = utf8.len(s) or #s
+  if len &gt;= n then
+    return s
   end
-  copy()
-  if demonnic.chat.config.timestamp then
-    local timestamp = getTime(true, demonnic.chat.config.timestamp)
-    local tsfg = {}
-    local tsbg = {}
-    local colorLeader = ""
-    if demonnic.chat.config.timestampCustomColor then
-      if type(demonnic.chat.config.timestampFG) == "string" then
-        tsfg = color_table[demonnic.chat.config.timestampFG]
+  return s .. string.rep(" ", n - len)
+end
+
+local function location(p)
+  if not (has(p.zone) or has(p.room)) then
+    return
+  end
+  title(dl.t("loc.title"))
+  if has(p.zone) then
+    out(p.zone .. "\n", C.zone)
+  end
+  if has(p.room) then
+    out(p.room .. "\n", C.room)
+  end
+  local ex = p.exits
+  if type(ex) == "table" then
+    -- e: open exits, h: closed ones, as lowercase English letters.
+    -- l: which letters to draw, "r" for Russian ones.
+    local dirs = { { "n", "N", "С" }, { "e", "E", "В" }, { "s", "S", "Ю" },
+                   { "w", "W", "З" }, { "d", "D", "О" }, { "u", "U", "П" } }
+    out(dl.t("loc.exits") .. " ")
+    for _, d in ipairs(dirs) do
+      local letter = ex.l == "r" and d[3] or d[2]
+      if string.find(ex.h or "", d[1], 1, true) then
+        out(letter .. " ", C.dim)
+      elseif string.find(ex.e or "", d[1], 1, true) then
+        out(letter .. " ", C.room)
       else
-        tsfg = demonnic.chat.config.timestampFG
+        out("· ", C.dim)
       end
-      if type(demonnic.chat.config.timestampBG) == "string" then
-        tsbg = color_table[demonnic.chat.config.timestampBG]
-      else
-        tsbg = demonnic.chat.config.timestampBG
+    end
+    out("\n")
+  end
+  if type(p.sect) == "table" and has(p.sect.n) then
+    out(p.sect.n .. "\n", C.dim)
+  end
+end
+
+local function timeWeather(p)
+  local t, d, w = p.time, p.date, p.w
+  if type(t) ~= "table" and type(d) ~= "table" and type(w) ~= "table" then
+    return
+  end
+  title(dl.t("tw.title"))
+  if type(t) == "table" then
+    out(string.format("%s %s", t.h or "", t.tod or ""))
+    if has(t.l) then
+      out(", " .. t.l)
+    end
+    out("\n")
+  end
+  if type(d) == "table" then
+    out(string.format("%s / %s", d.d or "", d.m or ""))
+    if has(d.s) then
+      out(" / " .. d.s)
+    end
+    out("\n")
+  end
+  if type(w) == "table" and has(w.m) then
+    out(w.m .. "\n")
+  end
+end
+
+local function quests(p)
+  -- aq: area quest, t = title, i = current step.
+  if type(p.aq) == "table" then
+    title(p.aq.t or "")
+    out((p.aq.i or "") .. "\n", "#d0b040")
+  end
+  -- q: questor task, t = minutes left, i = what to do.
+  if type(p.q) == "table" then
+    title(string.format("%s %s %s", dl.t("qst.title"), p.q.t or "", dl.t("qst.min")))
+    out((p.q.i or "") .. "\n")
+  end
+end
+
+local function group(p)
+  local g = p.group
+  -- Solo players get only the leader line; the web hides the block then too.
+  if type(g) ~= "table" or (g.pc == nil and g.npc == nil) then
+    return
+  end
+  title(dl.t("grp.title") .. " " .. (g.ln or ""))
+  local function row(m)
+    out(pad(m.sees, 12) .. pad(m.level, 4))
+    out(pad((m.health or "?") .. "%", 6), dl.ansi[tostring(m.hit_clr)] or C.text)
+    out(tostring(m.tnl or "") .. "\n", C.dim)
+  end
+  if type(g.leader) == "table" then
+    row(g.leader)
+  end
+  for _, list in ipairs({ g.pc, g.npc }) do
+    if type(list) == "table" then
+      for _, m in ipairs(list) do
+        row(m)
       end
-      colorLeader = string.format("&lt;%s,%s,%s:%s,%s,%s&gt;",tsfg[1],tsfg[2],tsfg[3],tsbg[1],tsbg[2],tsbg[3])
-    else
-      colorLeader = string.format("&lt;%s,%s,%s:%s,%s,%s&gt;",ofr,ofg,ofb,obr,obg,obb)
     end
-    local fullstamp = string.format("%s%s",colorLeader,timestamp)
-      demonnic.chat.windows[chat]:decho(fullstamp)
-      demonnic.chat.windows[chat]:echo(" ")
-      if demonnic.chat.config.Alltab then 
-        demonnic.chat.windows[demonnic.chat.config.Alltab]:decho(fullstamp)
-        demonnic.chat.windows[demonnic.chat.config.Alltab]:echo(" ")
+  end
+end
+
+local function affects(p)
+  local items = {}
+  for _, fam in ipairs(AFFECT_FAMILIES) do
+    if type(p[fam]) == "table" then
+      for _, a in ipairs(p[fam]) do
+        items[#items + 1] = { n = a.n, d = tonumber(a.d), curse = fam == "mal" }
       end
+    end
   end
-  demonnic.chat.windows[chat]:append()
-  if demonnic.chat.config.gag then 
-    deleteLine() 
-    tempLineTrigger(1,1, [[if isPrompt() then deleteLine() end]])
+  if #items == 0 then
+    return
   end
-  if demonnic.chat.config.Alltab then appendBuffer(string.format("win%s", demonnic.chat.config.Alltab)) end
-  if demonnic.chat.config.blink and chat ~= demonnic.chat.currentTab then 
-    if (demonnic.chat.config.Alltab == demonnic.chat.currentTab) and not demonnic.chat.config.blinkOnAll then
-      return
+  -- Curses first, then soonest to expire; permanent ones (d &lt; 0) last.
+  local function rank(a)
+    if a.d == nil or a.d &lt; 0 then
+      return math.huge
+    end
+    return a.d
+  end
+  table.sort(items, function(a, b)
+    if a.curse ~= b.curse then
+      return a.curse
+    end
+    return rank(a) &lt; rank(b)
+  end)
+  title(dl.t("aff.title"))
+  for i, a in ipairs(items) do
+    local color = dl.ansi["2"]
+    if a.curse then
+      color = dl.ansi["1"]
+    elseif a.d ~= nil and a.d &lt; 0 then
+      color = dl.ansi["6"]
+    elseif a.d ~= nil and a.d &lt;= 1 then
+      color = dl.ansi["3"]
+    end
+    out(a.n or "?", color)
+    out(i &lt; #items and "  " or "\n")
+  end
+end
+
+local function stats(p)
+  local p1, p2 = p.p1, p.p2
+  if type(p1) ~= "table" and type(p2) ~= "table" then
+    return
+  end
+  title(dl.t("par.title"))
+  if type(p1) == "table" and type(p1.ps) == "table" then
+    local keys = { "str", "int", "wis", "dex", "con", "cha" }
+    for i, k in ipairs(keys) do
+      out(dl.t("par." .. k) .. " ", C.dim)
+      out(tostring(p1.ps[i] or "?"))
+      out("(" .. tostring((p1.cs or {})[i] or "?") .. ")", C.dim)
+      out(i % 3 == 0 and "\n" or "  ")
+    end
+  end
+  if type(p2) == "table" then
+    for _, k in ipairs({ { "hit", "h" }, { "dam", "d" }, { "ac", "a" }, { "save", "s" } }) do
+      out(dl.t("par." .. k[1]) .. " ", C.dim)
+      out(tostring(p2[k[2]] or "?") .. "  ")
+    end
+    out("\n")
+  end
+end
+
+local function who(p)
+  local w = p.who
+  if type(w) ~= "table" or type(w.p) ~= "table" then
+    return
+  end
+  title(string.format("%s (%s)", dl.t("who.title"), w.t or #w.p))
+  for _, pl in ipairs(w.p) do
+    local name = pl.n or "?"
+    dl.ui.info:hechoLink(C.room .. pad(name, 13), function()
+      send("whois " .. name, true)
+    end, "whois " .. name, true)
+    out(pad(localName(RACE_NAMES, pl.r), 9), C.dim)
+    if pl.cn and pl.cn ~= "n" then
+      out(localName(CLAN_NAMES, pl.cn))
+    end
+    out("\n")
+  end
+end
+
+function dl.ui.renderInfo()
+  if not dl.ui.info or dl.settings.hidden then
+    return
+  end
+  local p = dl.prompt
+  dl.ui.info:clear()
+  location(p)
+  timeWeather(p)
+  quests(p)
+  group(p)
+  affects(p)
+  stats(p)
+  who(p)
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>chat</name>
+				<packageName></packageName>
+				<script>-- Chat tabs fed by Comm.Channel.Text. Every line also stays in the main
+-- window as the game printed it; the tabs are a copy you can scroll back in.
+
+dl.chat = dl.chat or {}
+
+local TABS = { "all", "room", "personal", "group", "world" }
+
+-- The server's coarse channel buckets (chatframe.h), folded into five tabs.
+local KIND_TO_TAB = {
+  room = "room", mob = "room", quest = "room",
+  personal = "personal",
+  group = "group",
+  world = "world", area = "world", race = "world",
+}
+
+local function tabStyle(label, active, unread)
+  local bg = active and "#3a2f52" or "#1c1726"
+  local fg = unread and "#ffff55" or (active and "white" or "#a090c0")
+  label:setStyleSheet(string.format(
+    "background-color: %s; color: %s; border: 1px solid #3a2f52; border-radius: 3px;", bg, fg))
+end
+
+local function tabCaption(tab)
+  local caption = dl.t("tab." .. tab)
+  if dl.chat.unread[tab] then
+    caption = caption .. " *"
+  end
+  return "&lt;center&gt;" .. caption .. "&lt;/center&gt;"
+end
+
+function dl.chat.refreshTabs()
+  for _, tab in ipairs(TABS) do
+    local label = dl.chat.labels[tab]
+    if label then
+      label:echo(tabCaption(tab))
+      tabStyle(label, tab == dl.chat.active, dl.chat.unread[tab])
+    end
+  end
+end
+
+function dl.chat.switch(tab)
+  dl.chat.active = tab
+  dl.chat.unread[tab] = nil
+  for _, t in ipairs(TABS) do
+    if t == tab then
+      dl.chat.consoles[t]:show()
     else
-      demonnic.chat.tabsToBlink[chat] = true
+      dl.chat.consoles[t]:hide()
     end
   end
+  dl.chat.refreshTabs()
 end
 
+function dl.chat.build()
+  dl.chat.labels = {}
+  dl.chat.consoles = {}
+  dl.chat.unread = {}
+  for _, tab in ipairs(TABS) do
+    local label = Geyser.Label:new({ name = "dl.tab." .. tab }, dl.ui.tabBar)
+    label:setClickCallback(function() dl.chat.switch(tab) end)
+    dl.chat.labels[tab] = label
 
-
-function demonnic.chat:blink()
-  if demonnic.chat.blinkID then killTimer(demonnic.chat.blinkID) end
-  if not demonnic.chat.config.blink then 
-    demonnic.chat.blinkTimerOn = false
-    return 
+    local console = Geyser.MiniConsole:new({
+      name = "dl.chat." .. tab, x = 0, y = 0, width = "100%", height = "100%",
+    }, dl.ui.chatBox)
+    dl.ui.consoleStyle(console)
+    dl.chat.consoles[tab] = console
   end
-  if not demonnic.chat.container.hidden then
-    for tab,_ in pairs(demonnic.chat.tabsToBlink) do
-      demonnic.chat.tabs[tab]:flash()
+  dl.chat.switch("all")
+end
+
+local function put(tab, line)
+  local console = dl.chat.consoles[tab]
+  if not console then
+    return
+  end
+  console:decho(line)
+  if tab ~= dl.chat.active then
+    dl.chat.unread[tab] = true
+  end
+end
+
+function dl.chat.onText()
+  local msg = gmcp.Comm and gmcp.Comm.Channel and gmcp.Comm.Channel.Text
+  if type(msg) ~= "table" or not dl.chat.consoles then
+    return
+  end
+  local text = msg.text or ""
+  if text == "" then
+    return
+  end
+  if not text:ends("\n") then
+    text = text .. "\n"
+  end
+  local stamp = ""
+  if tonumber(msg.at) then
+    stamp = "&lt;112,112,112&gt;" .. os.date("%H:%M ", tonumber(msg.at))
+  end
+  local line = stamp .. ansi2decho(text)
+
+  put("all", line)
+  local tab = KIND_TO_TAB[msg.kind or ""]
+  if tab then
+    put(tab, line)
+  end
+  dl.chat.refreshTabs()
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>buttons</name>
+				<packageName></packageName>
+				<script>-- Command buttons, as in the web client. A button sends the command in the
+-- player's own language, so the echo in the main window reads naturally.
+-- Source of truth for every word: &lt;name&gt;/&lt;aliases&gt; in dreamland_world/commands.
+
+local WORDS = {
+  look = { en = "look", ru = "смотреть", ua = "дивитися" },
+  inv = { en = "inventory", ru = "инвентарь", ua = "інвентар" },
+  equip = { en = "equipment", ru = "снаряжение", ua = "спорядження" },
+  score = { en = "score", ru = "счет", ua = "рахунок" },
+  recall = { en = "recall", ru = "возврат", ua = "повернення" },
+  flee = { en = "flee", ru = "сбежать", ua = "втекти" },
+  practice = { en = "practice", ru = "практиковать", ua = "практикувати" },
+  magic = { en = "skills spells", ru = "умения заклинания", ua = "вміння заклинання" },
+  skills = { en = "skills skills", ru = "умения навыки", ua = "вміння навички" },
+  quests = { en = "quest", ru = "задания", ua = "завдання" },
+  commands = { en = "commands", ru = "команды", ua = "команди" },
+}
+
+local INFO = { "look", "inv", "equip", "score" }
+
+local function word(key)
+  local w = WORDS[key]
+  return w[dl.lang()] or w.en
+end
+
+-- Returns the list of {label, command, fight} buttons for the current state.
+local function buttonList(p)
+  local list = {}
+  local fighting = (tonumber(p.fight) or 0) &gt; 0
+  if fighting then
+    -- fcmd: the combat actions this character can use right now, from the server.
+    local actions = type(p.fcmd) == "table" and p.fcmd or {}
+    if #actions == 0 then
+      actions = { word("flee"), word("recall") }
+    end
+    for _, cmd in ipairs(actions) do
+      list[#list + 1] = { cmd:sub(1, 1):upper() .. cmd:sub(2), cmd, true }
+    end
+    for _, key in ipairs(INFO) do
+      list[#list + 1] = { dl.t("cmd." .. key), word(key) }
+    end
+  else
+    local keys = { "look", "inv", "equip", "score", "recall", "practice" }
+    -- sp: number of spells; no spell list button for those who have none.
+    if p.sp ~= 0 then
+      keys[#keys + 1] = "magic"
+    end
+    for _, k in ipairs({ "skills", "quests", "commands" }) do
+      keys[#keys + 1] = k
+    end
+    for _, key in ipairs(keys) do
+      list[#list + 1] = { dl.t("cmd." .. key), word(key) }
     end
   end
-  demonnic.chat.blinkID = tempTimer(demonnic.chat.config.blinkTime, function () demonnic.chat:blink() end)
+  return list
 end
 
-function demonnic.chat:topright()
-  return {
-    fontSize = demonnic.chat.config.fontSize,
-    x=string.format("-%sc",demonnic.chat.config.width + 2),
-    y=0,
-    width="-15px",
-    height=string.format("%ic", demonnic.chat.config.lines + 2),
-  }
-end
+dl.ui.buttons = dl.ui.buttons or {}
 
-function demonnic.chat:topleft()
-  return {
-    fontSize = demonnic.chat.config.fontSize,
-    x=0,
-    y=0,
-    width=string.format("%sc",demonnic.chat.config.width),
-    height=string.format("%ic", demonnic.chat.config.lines + 2),
-  }
-end
-
-function demonnic.chat:bottomright()
-  return {
-    fontSize = demonnic.chat.config.fontSize,
-    x=string.format("-%sc",demonnic.chat.config.width + 2),
-    y=string.format("-%sc",demonnic.chat.config.lines + 2),
-    width="-15px",
-    height=string.format("%ic", demonnic.chat.config.lines + 2),
-  }
-end
-
-function demonnic.chat:bottomleft()
-  return {
-    fontSize = demonnic.chat.config.fontSize,
-    x=0,
-    y=string.format("-%sc",demonnic.chat.config.lines + 2),
-    width=string.format("%sc",demonnic.chat.config.width),
-    height=string.format("%ic", demonnic.chat.config.lines + 2),
-  }
-end</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
-					<name>demonnicOnStart</name>
-					<packageName></packageName>
-					<script>function demonnicOnStart()
-  if demonnic.chat.use then
-    demonnic.chat:create()
+function dl.ui.renderButtons()
+  if not dl.ui.buttonBox or dl.settings.hidden then
+    return
   end
-end</script>
-					<eventHandlerList>
-						<string>sysLoadEvent</string>
-					</eventHandlerList>
-				</Script>
-				<Script isActive="yes" isFolder="no">
-					<name>echo functions</name>
-					<packageName></packageName>
-					<script>
-function demonnic.chat:cecho(chat, message)
-  local alltab = demonnic.chat.config.Alltab
-  local blink = demonnic.chat.config.blink
-  cecho(string.format("win%s",chat), message)
-  if alltab and chat ~= alltab then 
-    cecho(string.format("win%s", alltab), message)
+  local list = buttonList(dl.prompt)
+
+  -- Rebuild only when the set changes: a prompt arrives after every command.
+  local sig = {}
+  for _, b in ipairs(list) do
+    sig[#sig + 1] = b[1] .. "=" .. b[2]
   end
-  if blink and chat ~= demonnic.chat.currentTab then
-    if (alltab == demonnic.chat.currentTab) and not demonnic.chat.config.blinkOnAll then
-      return
-    else
-      demonnic.chat.tabsToBlink[chat] = true
+  sig = table.concat(sig, "|")
+  if sig == dl.ui.buttonSig then
+    return
+  end
+  dl.ui.buttonSig = sig
+
+  for _, label in ipairs(dl.ui.buttons) do
+    label:hide()
+  end
+
+  -- Two columns, filled top-down, the taller one first.
+  local half = math.ceil(#list / 2)
+  for i, b in ipairs(list) do
+    local label = dl.ui.buttons[i]
+    if not label then
+      label = Geyser.Label:new({ name = "dl.button." .. i }, dl.ui.buttonBox)
+      dl.ui.buttons[i] = label
+    end
+    local col = i &lt;= half and 0 or 1
+    local row = i &lt;= half and (i - 1) or (i - half - 1)
+    label:move(col == 0 and 4 or "50%+2", row * 26 + 2)
+    label:resize("50%-6", 23)
+    label:echo("&lt;center&gt;" .. b[1] .. "&lt;/center&gt;")
+    label:setStyleSheet(string.format(
+      "background-color: %s; color: white; border: 1px solid #4a3d66; border-radius: 4px;",
+      b[3] and dl.colors.buttonFight or dl.colors.button))
+    local cmd = b[2]
+    label:setClickCallback(function() send(cmd) end)
+    label:show()
+  end
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>events</name>
+				<packageName></packageName>
+				<script>-- Wiring: GMCP events, install/uninstall, and the `dl` command.
+
+local OWNER = "dreamland"
+
+function dl.ui.render()
+  dl.ui.updateVitals()
+  dl.ui.renderInfo()
+  dl.ui.renderButtons()
+end
+
+-- The server sends only the prompt fields that changed, like it does for the
+-- web client, so merge them into what we already have.
+function dl.onPrompt()
+  local p = gmcp.Dreamland and gmcp.Dreamland.Prompt
+  if type(p) ~= "table" then
+    return
+  end
+  local oldLang = dl.prompt.lang
+  for k, v in pairs(p) do
+    dl.prompt[k] = v
+  end
+  if not dl.ui.root then
+    dl.ui.build()
+  end
+  if dl.prompt.lang ~= oldLang and dl.chat.refreshTabs then
+    dl.chat.refreshTabs()
+    dl.ui.buttonSig = nil
+  end
+  dl.ui.render()
+end
+
+-- Mudlet installs its generic mapper on every new profile. DreamLand has no
+-- mapper of its own, and an idle generic mapper keeps asking for a prompt
+-- pattern, so remove it -- unless the player already drew a map with it.
+function dl.quietGenericMapper()
+  if not table.contains(getPackages(), "generic_mapper") then
+    return
+  end
+  local rooms = getRooms() or {}
+  if next(rooms) ~= nil then
+    return
+  end
+  uninstallPackage("generic_mapper")
+end
+
+-- The 2019 package drew a bottom bar, a mapper and a chat window. When it is
+-- upgraded in a running session its windows outlive its scripts, so hide them.
+local OLD_WINDOWS = { "bottompanel", "dhb.healthbox", "dhb.ui.mapchat", "dhb.ui.chat",
+                      "dhb.ui.mapper", "DemonChatTabs" }
+
+function dl.hideOldPackage()
+  local hidden = false
+  for _, name in ipairs(OLD_WINDOWS) do
+    local w = Geyser.windowList[name]
+    if w then
+      w:hide()
+      hidden = true
     end
   end
-end
-
-function demonnic.chat:decho(chat, message)
-  local alltab = demonnic.chat.config.Alltab
-  local blink = demonnic.chat.config.blink
-  decho(string.format("win%s",chat), message)
-  if alltab and chat ~= alltab then 
-    decho(string.format("win%s", alltab), message)
-  end
-  if blink and chat ~= demonnic.chat.currentTab then
-    if (alltab == demonnic.chat.currentTab) and not demonnic.chat.config.blinkOnAll then
-      return
-    else
-      demonnic.chat.tabsToBlink[chat] = true
-    end
+  if hidden then
+    setBorderBottom(0)
   end
 end
 
-function demonnic.chat:hecho(chat, message)
-  local alltab = demonnic.chat.config.Alltab
-  local blink = demonnic.chat.config.blink
-  hecho(string.format("win%s",chat), message)
-  if alltab and chat ~= alltab then 
-    hecho(string.format("win%s", alltab), message)
-  end
-  if blink and chat ~= demonnic.chat.currentTab then
-    if (alltab == demonnic.chat.currentTab) and not demonnic.chat.config.blinkOnAll then
-      return
-    else
-      demonnic.chat.tabsToBlink[chat] = true
+function dl.start()
+  dl.loadSettings()
+  dl.hideOldPackage()
+  deleteAllNamedEventHandlers(OWNER)
+  registerNamedEventHandler(OWNER, "prompt", "gmcp.Dreamland.Prompt", dl.onPrompt)
+  registerNamedEventHandler(OWNER, "chat", "gmcp.Comm.Channel.Text", dl.chat.onText)
+  registerNamedEventHandler(OWNER, "resize", "sysWindowResizeEvent", function()
+    dl.ui.applyBorder()
+  end)
+  registerNamedEventHandler(OWNER, "uninstall", "sysUninstallPackage", function(_, name)
+    if name == "Dreamland" then
+      dl.ui.destroy()
+      deleteAllNamedEventHandlers(OWNER)
     end
+  end)
+  tempTimer(1, dl.quietGenericMapper)
+end
+
+function dl.help()
+  cecho("\n&lt;orchid&gt;DreamLand UI " .. dl.version .. "&lt;reset&gt;\n"
+    .. "  dl hide        -- hide the side panel (the game text stays as it is)\n"
+    .. "  dl show        -- show it again\n"
+    .. "  dl width &lt;N&gt;   -- panel width, 15 to 60 percent of the window\n")
+end
+
+function dl.command(args)
+  args = (args or ""):trim()
+  local width = args:match("^width%s+(%d+)$")
+  if args == "hide" then
+    dl.ui.setHidden(true)
+  elseif args == "show" then
+    dl.ui.setHidden(false)
+  elseif width then
+    dl.ui.setWidth(math.max(15, math.min(60, tonumber(width))))
+  else
+    dl.help()
   end
 end
 
-
-function demonnic.chat:echo(chat, message)
-  local alltab = demonnic.chat.config.Alltab
-  local blink = demonnic.chat.config.blink
-  echo(string.format("win%s",chat), message)
-  if alltab and chat ~= alltab then 
-    echo(string.format("win%s", alltab), message)
-  end
-  if blink and chat ~= demonnic.chat.currentTab then
-    if (alltab == demonnic.chat.currentTab) and not demonnic.chat.config.blinkOnAll then
-      return
-    else
-      demonnic.chat.tabsToBlink[chat] = true
-    end
-  end
-end</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
-					<name>demonnicOnInstall</name>
-					<packageName></packageName>
-					<script>function demonnicOnInstall(_, package)
-  if package:find("YATCO") then
-  	demonnicOnStart()
-  end
-end</script>
-					<eventHandlerList>
-						<string>sysInstall</string>
-					</eventHandlerList>
-				</Script>
-			</ScriptGroup>
+dl.start()
+</script>
+				<eventHandlerList />
+			</Script>
 		</ScriptGroup>
 	</ScriptPackage>
-	<KeyPackage />
-	<HelpPackage>
-		<helpURL></helpURL>
-	</HelpPackage>
 </MudletPackage>
