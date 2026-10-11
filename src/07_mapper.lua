@@ -188,6 +188,12 @@ function dl.map.onDownloadDone(_, file)
   -- Only load into a map that is still empty: never overwrite one the
   -- player has started meanwhile.
   if mapIsEmpty() then
+    -- The panel's embedded mapper must exist before the load: with no mapper
+    -- on screen Mudlet opens its own map window, and the two cannot coexist
+    -- for the rest of the session.
+    if not dl.ui.root then
+      dl.ui.build()
+    end
     loadMap(MAP_FILE)
   end
   drawPending()
