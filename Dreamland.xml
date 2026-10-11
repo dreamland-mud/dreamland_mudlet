@@ -33,7 +33,7 @@
 -- language and with any custom prompt. The game text itself is never gagged or
 -- moved: the panels only repeat it, so screen reader players lose nothing.
 dl = dl or {}
-dl.version = "2.3"
+dl.version = "2.4"
 dl.prompt = dl.prompt or {}
 dl.ui = dl.ui or {}
 
@@ -1268,6 +1268,12 @@ function dl.map.onDownloadDone(_, file)
   -- Only load into a map that is still empty: never overwrite one the
   -- player has started meanwhile.
   if mapIsEmpty() then
+    -- The panel's embedded mapper must exist before the load: with no mapper
+    -- on screen Mudlet opens its own map window, and the two cannot coexist
+    -- for the rest of the session.
+    if not dl.ui.root then
+      dl.ui.build()
+    end
     loadMap(MAP_FILE)
   end
   drawPending()
