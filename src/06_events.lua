@@ -29,9 +29,9 @@ function dl.onPrompt()
   dl.ui.render()
 end
 
--- Mudlet installs its generic mapper on every new profile. DreamLand has no
--- mapper of its own, and an idle generic mapper keeps asking for a prompt
--- pattern, so remove it -- unless the player already drew a map with it.
+-- Mudlet installs its generic mapper on every new profile. It builds the map
+-- from game text and fights our GMCP mapper over the same rooms, so remove
+-- it -- unless the player already drew a map with it.
 function dl.quietGenericMapper()
   if not table.contains(getPackages(), "generic_mapper") then
     return
@@ -68,6 +68,9 @@ function dl.start()
   deleteAllNamedEventHandlers(OWNER)
   registerNamedEventHandler(OWNER, "prompt", "gmcp.Dreamland.Prompt", dl.onPrompt)
   registerNamedEventHandler(OWNER, "chat", "gmcp.Comm.Channel.Text", dl.chat.onText)
+  registerNamedEventHandler(OWNER, "room", "gmcp.Room.Info", function()
+    dl.map.onRoomInfo()
+  end)
   registerNamedEventHandler(OWNER, "resize", "sysWindowResizeEvent", function()
     dl.ui.applyBorder()
   end)

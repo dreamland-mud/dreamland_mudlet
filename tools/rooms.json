@@ -1,0 +1,2480 @@
+[
+{
+"num": 4500,
+"name": "A Dead-End Alley",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"s": 4501
+}
+},
+{
+"num": 4501,
+"name": "Moehewa Trade Street",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"e": 4502,
+"n": 4500
+}
+},
+{
+"num": 4502,
+"name": "Shop of Magical Artefacts",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"e": 4503,
+"w": 4501
+}
+},
+{
+"num": 4503,
+"name": "A Little Green on Moehewa's Market Square",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"e": 4504,
+"w": 4502
+}
+},
+{
+"num": 4504,
+"name": "The Sage's Tent",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"e": 4506,
+"n": 4505,
+"w": 4503
+}
+},
+{
+"num": 4505,
+"name": "A Dark Lane",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"s": 4504
+}
+},
+{
+"num": 4506,
+"name": "Outside Moehewa's Gates",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"e": 4510,
+"n": 4507,
+"s": 4508,
+"w": 4504
+}
+},
+{
+"num": 4507,
+"name": "A Grove by the Wall",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"s": 4506
+}
+},
+{
+"num": 4508,
+"name": "A Filthy Swamp",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"d": 4509,
+"n": 4506
+}
+},
+{
+"num": 4509,
+"name": "A Small Cave",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"u": 4508
+}
+},
+{
+"num": 4510,
+"name": "The Road to the Harbour",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"e": 4512,
+"w": 4506
+}
+},
+{
+"num": 4511,
+"name": "A Staging Post",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"s": 4510
+}
+},
+{
+"num": 4512,
+"name": "On the Quay",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {
+"w": 4510
+}
+},
+{
+"num": 4513,
+"name": "Medical Examination",
+"area": "Moehewa",
+"map": "https://dreamland.rocks/maps/intro.html",
+"exits": {}
+},
+{
+"num": 3000,
+"name": "Beneath the Temple Vaults",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3001
+}
+},
+{
+"num": 3001,
+"name": "Temple of Leo",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3760,
+"e": 18600,
+"n": 3054,
+"s": 3005,
+"u": 3000,
+"w": 3700
+}
+},
+{
+"num": 3002,
+"name": "Monks' Inner Sanctuary",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 7026,
+"e": 3003
+}
+},
+{
+"num": 3003,
+"name": "Monks' Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3004,
+"w": 3002
+}
+},
+{
+"num": 3004,
+"name": "Entrance to the Monks' Guild",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3005,
+"n": 3003
+}
+},
+{
+"num": 3005,
+"name": "Temple Square",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3006,
+"n": 3001,
+"s": 3014,
+"u": 3057,
+"w": 3004
+}
+},
+{
+"num": 3006,
+"name": "Lobby of the Grunting Boar Inn",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3007,
+"u": 3008,
+"w": 3005
+}
+},
+{
+"num": 3007,
+"name": "Grunting Boar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"w": 3006
+}
+},
+{
+"num": 3008,
+"name": "Closed Reception",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3006
+}
+},
+{
+"num": 3009,
+"name": "Bakery",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3013
+}
+},
+{
+"num": 3010,
+"name": "General Store",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3067
+}
+},
+{
+"num": 3011,
+"name": "Weapon Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3016
+}
+},
+{
+"num": 3012,
+"name": "Main Street",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3013,
+"n": 3033,
+"s": 3017,
+"w": 3040,
+"u": 1001
+}
+},
+{
+"num": 3013,
+"name": "Main Street",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3014,
+"n": 3009,
+"s": 3020,
+"w": 3012,
+"u": 1002
+}
+},
+{
+"num": 3014,
+"name": "Market Square",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3015,
+"n": 3005,
+"s": 3065,
+"w": 3013,
+"u": 1003
+}
+},
+{
+"num": 3015,
+"name": "Main Street",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3016,
+"n": 3063,
+"s": 3034,
+"w": 3014,
+"u": 1004
+}
+},
+{
+"num": 3016,
+"name": "Main Street",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3041,
+"n": 3011,
+"s": 3021,
+"w": 3015,
+"u": 1005
+}
+},
+{
+"num": 3017,
+"name": "Entrance to the Mages' Guild",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3012,
+"s": 3018
+}
+},
+{
+"num": 3018,
+"name": "Mages' Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3019,
+"n": 3017
+}
+},
+{
+"num": 3019,
+"name": "Magical Laboratory",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 7017,
+"w": 3018
+}
+},
+{
+"num": 3020,
+"name": "Armour Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3013
+}
+},
+{
+"num": 3021,
+"name": "Entry Hall of the Swordsmen Guild",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3022,
+"n": 3016
+}
+},
+{
+"num": 3022,
+"name": "Swordsmen Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3023,
+"w": 3021
+}
+},
+{
+"num": 3023,
+"name": "Tournament and Training Yard",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 7048,
+"n": 3022
+}
+},
+{
+"num": 3024,
+"name": "Eastern End of Beggars' Alley",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3025,
+"n": 3160,
+"s": 3048,
+"w": 3044,
+"u": 1012
+}
+},
+{
+"num": 3025,
+"name": "Common Square",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3037,
+"e": 3026,
+"n": 3067,
+"s": 3030,
+"w": 3024,
+"u": 1008
+}
+},
+{
+"num": 3026,
+"name": "Dark Alley",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3045,
+"n": 3352,
+"s": 3027,
+"w": 3025,
+"u": 1013
+}
+},
+{
+"num": 3027,
+"name": "Entry Hall of the Thieves' Guild",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3028,
+"n": 3026
+}
+},
+{
+"num": 3028,
+"name": "Thieves' Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3029,
+"w": 3027
+}
+},
+{
+"num": 3029,
+"name": "Secret Yard",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 7043,
+"n": 3028
+}
+},
+{
+"num": 3030,
+"name": "Dump",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 7030,
+"n": 3025,
+"s": 3254,
+"w": 34500,
+"u": 1009
+}
+},
+{
+"num": 3031,
+"name": "Pet Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3045
+}
+},
+{
+"num": 3032,
+"name": "Pet Shop Back Room",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {}
+},
+{
+"num": 3033,
+"name": "Magic Goods Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3012
+}
+},
+{
+"num": 3034,
+"name": "Jewelry Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3015
+}
+},
+{
+"num": 3035,
+"name": "Leather Goods Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3044
+}
+},
+{
+"num": 3037,
+"name": "Razer Metropolitan",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3038,
+"u": 3025
+}
+},
+{
+"num": 3038,
+"name": "Midgaard Common-Square Metro Station",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"u": 3037
+}
+},
+{
+"num": 3039,
+"name": "Locksmith's Workshop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3302
+}
+},
+{
+"num": 3040,
+"name": "Inside Midgaard's West Gate",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3012,
+"n": 3257,
+"s": 3042,
+"w": 3052
+}
+},
+{
+"num": 3041,
+"name": "Inside Midgaard's East Gate",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3053,
+"n": 3267,
+"s": 3250,
+"w": 3016
+}
+},
+{
+"num": 3042,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3170,
+"n": 3040,
+"s": 3043
+}
+},
+{
+"num": 3043,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3044,
+"n": 3042,
+"s": 16500
+}
+},
+{
+"num": 3044,
+"name": "Beggars' Alley",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3024,
+"n": 3035,
+"s": 3060,
+"w": 3043,
+"u": 1011
+}
+},
+{
+"num": 3045,
+"name": "Quayside Alley",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3046,
+"n": 3031,
+"s": 3049,
+"w": 3026,
+"u": 1014
+}
+},
+{
+"num": 3046,
+"name": "Eastern End of the Alley",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3251,
+"n": 3056,
+"s": 3050,
+"w": 3045
+}
+},
+{
+"num": 3048,
+"name": "Filthy Tavern",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3062,
+"n": 3024
+}
+},
+{
+"num": 3049,
+"name": "Quayside",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3045
+}
+},
+{
+"num": 3050,
+"name": "Abandoned Warehouse",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3046,
+"u": 8604
+}
+},
+{
+"num": 3052,
+"name": "Beyond Midgaard's West Gate",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3040,
+"n": 3206,
+"w": 6000
+}
+},
+{
+"num": 3053,
+"name": "Beyond Midgaard's East Gate",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 9403,
+"n": 3214,
+"w": 3041
+}
+},
+{
+"num": 3054,
+"name": "At the Temple Altar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3077,
+"s": 3001,
+"u": 1215,
+"w": 3300
+}
+},
+{
+"num": 3055,
+"name": "On the Dark River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3058,
+"w": 3205
+}
+},
+{
+"num": 3056,
+"name": "Fountain-of-Youth Apothecary",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3046
+}
+},
+{
+"num": 3057,
+"name": "In the Air...",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 1003,
+"u": 1036,
+"d": 3005
+}
+},
+{
+"num": 3058,
+"name": "On the Dark River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3059,
+"w": 3055
+}
+},
+{
+"num": 3059,
+"name": "Under the Bridge in the Dwarven Forest",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3079,
+"u": 5261,
+"w": 3058
+}
+},
+{
+"num": 3060,
+"name": "Entrance to the Anti-Paladins' Guild",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3061,
+"n": 3044
+}
+},
+{
+"num": 3061,
+"name": "Torture Chamber",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"w": 3060
+}
+},
+{
+"num": 3062,
+"name": "Underground Chamber",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"u": 3048
+}
+},
+{
+"num": 3063,
+"name": "Sacred Temple",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3064,
+"s": 3015
+}
+},
+{
+"num": 3064,
+"name": "Knights' Sanctuary",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"w": 3063
+}
+},
+{
+"num": 3065,
+"name": "Great Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3066,
+"n": 3014,
+"s": 3067,
+"w": 3083,
+"u": 1006
+}
+},
+{
+"num": 3066,
+"name": "Butcher Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"w": 3065
+}
+},
+{
+"num": 3067,
+"name": "Great Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 4281,
+"n": 3065,
+"s": 3025,
+"w": 3010,
+"u": 1007
+}
+},
+{
+"num": 3073,
+"name": "Warlocks' Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3074,
+"w": 3352
+}
+},
+{
+"num": 3074,
+"name": "Warlocks' Laboratory",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 7017,
+"s": 3073
+}
+},
+{
+"num": 3075,
+"name": "Samurai Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3357,
+"w": 3076
+}
+},
+{
+"num": 3076,
+"name": "Samurai Shrine",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3075
+}
+},
+{
+"num": 3077,
+"name": "Vestry",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3054
+}
+},
+{
+"num": 3078,
+"name": "Lost and Found",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3083,
+"s": 3084
+}
+},
+{
+"num": 3079,
+"name": "On the Dark River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3080,
+"w": 3059
+}
+},
+{
+"num": 3080,
+"name": "On the Rapids of the Dark River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 1521,
+"w": 3079
+}
+},
+{
+"num": 3081,
+"name": "Dark River, Beyond the Village",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3082
+}
+},
+{
+"num": 3082,
+"name": "Dark River, Near the Eastern Mountains",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3081
+}
+},
+{
+"num": 3083,
+"name": "Lost and Found",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3065,
+"w": 3078
+}
+},
+{
+"num": 3084,
+"name": "Chest Storage",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3078
+}
+},
+{
+"num": 3160,
+"name": "Melancholic's Map Shop",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3161,
+"s": 3024
+}
+},
+{
+"num": 3161,
+"name": "Melancholic's Room",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3160
+}
+},
+{
+"num": 3170,
+"name": "Temple of Fools",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 777,
+"w": 3042
+}
+},
+{
+"num": 3202,
+"name": "On the River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3203,
+"u": 3254,
+"w": 16554
+}
+},
+{
+"num": 3203,
+"name": "On the River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3204,
+"w": 3202
+}
+},
+{
+"num": 3204,
+"name": "On the River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3205,
+"w": 3203
+}
+},
+{
+"num": 3205,
+"name": "On the River",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3055,
+"u": 16556,
+"w": 3204
+}
+},
+{
+"num": 3206,
+"name": "The Western Stretch of the Path around Midgaard",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3207,
+"s": 3052
+}
+},
+{
+"num": 3207,
+"name": "The Western Stretch of the Path around Midgaard",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3208,
+"s": 3206,
+"w": 1163
+}
+},
+{
+"num": 3208,
+"name": "Southwest Bend of the Dusty Path",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3209,
+"s": 3207
+}
+},
+{
+"num": 3209,
+"name": "Dusty Path along the North Wall",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3210,
+"w": 3208
+}
+},
+{
+"num": 3210,
+"name": "Long Dusty Path along the North Wall",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3211,
+"n": 300,
+"s": 3268,
+"w": 3209
+}
+},
+{
+"num": 3211,
+"name": "Dusty Path along the North Wall",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3212,
+"w": 3210
+}
+},
+{
+"num": 3212,
+"name": "Northeast Bend of the Dusty Path",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3213,
+"w": 3211
+}
+},
+{
+"num": 3213,
+"name": "The Eastern Path around Midgaard",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 21801,
+"n": 3212,
+"s": 3214
+}
+},
+{
+"num": 3214,
+"name": "The Eastern Path around Midgaard",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3213,
+"s": 3053
+}
+},
+{
+"num": 3250,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3041,
+"s": 3251
+}
+},
+{
+"num": 3251,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3250,
+"s": 16555,
+"w": 3046
+}
+},
+{
+"num": 3254,
+"name": "South Bridge",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3202,
+"n": 3030,
+"s": 16509,
+"u": 1010
+}
+},
+{
+"num": 3257,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3258,
+"s": 3040
+}
+},
+{
+"num": 3258,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3301,
+"n": 3259,
+"s": 3257
+}
+},
+{
+"num": 3259,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3260,
+"s": 3258
+}
+},
+{
+"num": 3260,
+"name": "Northwest Corner",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3261,
+"s": 3259
+}
+},
+{
+"num": 3261,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3262,
+"w": 3260
+}
+},
+{
+"num": 3262,
+"name": "Inside Midgaard's North Gate",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3263,
+"n": 3268,
+"w": 3261
+}
+},
+{
+"num": 3263,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3264,
+"w": 3262
+}
+},
+{
+"num": 3264,
+"name": "Northeast Corner",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3265,
+"w": 3263
+}
+},
+{
+"num": 3265,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3264,
+"s": 3266
+}
+},
+{
+"num": 3266,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3265,
+"s": 3267,
+"w": 3316
+}
+},
+{
+"num": 3267,
+"name": "Wall Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3266,
+"s": 3041
+}
+},
+{
+"num": 3268,
+"name": "Beyond Midgaard's North Gate",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3210,
+"s": 3262
+}
+},
+{
+"num": 3300,
+"name": "Gazebo (chat room)",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3054
+}
+},
+{
+"num": 3301,
+"name": "Clan Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3302,
+"w": 3258
+}
+},
+{
+"num": 3302,
+"name": "Clan Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3303,
+"n": 3039,
+"s": 3334,
+"w": 3301
+}
+},
+{
+"num": 3303,
+"name": "Clan Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3314,
+"n": 3335,
+"w": 3302
+}
+},
+{
+"num": 3314,
+"name": "Clan Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3315,
+"n": 5936,
+"w": 3303
+}
+},
+{
+"num": 3315,
+"name": "Clan Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3316,
+"s": 3356,
+"w": 3314
+}
+},
+{
+"num": 3316,
+"name": "Clan Road",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3266,
+"w": 3315
+}
+},
+{
+"num": 3334,
+"name": "Money Exchange Room",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3302
+}
+},
+{
+"num": 3335,
+"name": "Restringer's Office",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3303,
+"n": 3336
+}
+},
+{
+"num": 3336,
+"name": "Back Room",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"s": 3335
+}
+},
+{
+"num": 3352,
+"name": "Toadstool Tavern",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3073,
+"s": 3026
+}
+},
+{
+"num": 3355,
+"name": "Andy's Inn",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"e": 3356,
+"s": 3357
+}
+},
+{
+"num": 3356,
+"name": "Room at the Inn",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3315,
+"s": 3358,
+"u": 3359,
+"w": 3355
+}
+},
+{
+"num": 3357,
+"name": "Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3355,
+"s": 3075
+}
+},
+{
+"num": 3358,
+"name": "Bar",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"n": 3356
+}
+},
+{
+"num": 3359,
+"name": "Inn",
+"area": "Midgaard",
+"map": "https://dreamland.rocks/maps/midgaard.html",
+"exits": {
+"d": 3356
+}
+},
+{
+"num": 18600,
+"name": "Entrance to the Newbie Zone",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18601,
+"w": 3001
+}
+},
+{
+"num": 18601,
+"name": "Start of a Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18602,
+"s": 18600
+}
+},
+{
+"num": 18602,
+"name": "A Filthy Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18603,
+"s": 18606,
+"w": 18601
+}
+},
+{
+"num": 18603,
+"name": "Crossroads",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18646,
+"n": 18644,
+"s": 18607,
+"w": 18602
+}
+},
+{
+"num": 18604,
+"name": "A Narrow Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18647,
+"s": 18612
+}
+},
+{
+"num": 18605,
+"name": "A Dark Pit",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"u": 18606
+}
+},
+{
+"num": 18606,
+"name": "A Small Room",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"d": 18605,
+"e": 18607,
+"n": 18602
+}
+},
+{
+"num": 18607,
+"name": "A Large Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18603,
+"s": 18611,
+"w": 18606
+}
+},
+{
+"num": 18608,
+"name": "A Dead End by the Wall",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18609
+}
+},
+{
+"num": 18609,
+"name": "The End of the Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18610,
+"w": 18608
+}
+},
+{
+"num": 18610,
+"name": "A Bright Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18611,
+"w": 18609
+}
+},
+{
+"num": 18611,
+"name": "Yet Another Corner",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18612,
+"n": 18607,
+"w": 18610
+}
+},
+{
+"num": 18612,
+"name": "The Alchemist's Room",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"d": 18632,
+"n": 18604,
+"w": 18611
+}
+},
+{
+"num": 18620,
+"name": "Bend in the Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18621,
+"s": 18629
+}
+},
+{
+"num": 18621,
+"name": "T-Junction of Corridors",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18622,
+"s": 18633,
+"w": 18620
+}
+},
+{
+"num": 18622,
+"name": "Another Corner",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"s": 18628,
+"w": 18621
+}
+},
+{
+"num": 18623,
+"name": "A Corner of the Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18624,
+"s": 18627
+}
+},
+{
+"num": 18624,
+"name": "Another Turn",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"s": 18630,
+"w": 18623
+}
+},
+{
+"num": 18625,
+"name": "A Spacious Room",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18626,
+"s": 18631
+}
+},
+{
+"num": 18626,
+"name": "A Long Corridor Running East to West",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18627,
+"w": 18625
+}
+},
+{
+"num": 18627,
+"name": "Junction of Corridors",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18628,
+"n": 18623,
+"s": 18632,
+"w": 18626
+}
+},
+{
+"num": 18628,
+"name": "A Corner Room",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18622,
+"w": 18627
+}
+},
+{
+"num": 18629,
+"name": "The Red Room",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18630,
+"n": 18620
+}
+},
+{
+"num": 18630,
+"name": "Branch in the Passage",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18624,
+"s": 18634,
+"w": 18629
+}
+},
+{
+"num": 18631,
+"name": "A Passage",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18632,
+"n": 18625,
+"s": 18638
+}
+},
+{
+"num": 18632,
+"name": "By the Entrance",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18627,
+"s": 18635,
+"u": 18612,
+"w": 18631
+}
+},
+{
+"num": 18633,
+"name": "Another Corner",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18634,
+"n": 18621
+}
+},
+{
+"num": 18634,
+"name": "Junction of Corridors",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18630,
+"s": 18637,
+"w": 18633
+}
+},
+{
+"num": 18635,
+"name": "Bend in the Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18636,
+"n": 18632
+}
+},
+{
+"num": 18636,
+"name": "A Branch to the South",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18637,
+"s": 18639,
+"w": 18635
+}
+},
+{
+"num": 18637,
+"name": "Yet Another Corner",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18634,
+"w": 18636
+}
+},
+{
+"num": 18638,
+"name": "A Spacious Room",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18639,
+"n": 18631
+}
+},
+{
+"num": 18639,
+"name": "A Spacious Room",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18636,
+"w": 18638
+}
+},
+{
+"num": 18640,
+"name": "Room with a Statue",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18641,
+"s": 18644
+}
+},
+{
+"num": 18641,
+"name": "A Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18642,
+"w": 18640
+}
+},
+{
+"num": 18642,
+"name": "Northern Staircase",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"s": 18647,
+"u": 18643,
+"w": 18641
+}
+},
+{
+"num": 18643,
+"name": "Balcony",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"d": 18642,
+"s": 18645
+}
+},
+{
+"num": 18644,
+"name": "A Well-Lit Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18640,
+"s": 18603
+}
+},
+{
+"num": 18645,
+"name": "Balcony",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"d": 18647,
+"n": 18643
+}
+},
+{
+"num": 18646,
+"name": "A Well-Lit Corridor",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"e": 18647,
+"w": 18603
+}
+},
+{
+"num": 18647,
+"name": "Southern Staircase",
+"area": "Newbie Zone",
+"map": "https://dreamland.rocks/maps/newbie2.html",
+"exits": {
+"n": 18642,
+"s": 18604,
+"u": 18645,
+"w": 18646
+}
+},
+{
+"num": 3700,
+"name": "Entrance to the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3001,
+"n": 3757,
+"u": 411
+}
+},
+{
+"num": 3701,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"s": 3757,
+"w": 3702
+}
+},
+{
+"num": 3702,
+"name": "The Central Room",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"d": 3707,
+"e": 3701,
+"n": 3703,
+"s": 3705,
+"u": 3708,
+"w": 3704
+}
+},
+{
+"num": 3703,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3709,
+"s": 3702
+}
+},
+{
+"num": 3704,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3702
+}
+},
+{
+"num": 3705,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3702
+}
+},
+{
+"num": 3707,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"u": 3702
+}
+},
+{
+"num": 3708,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"d": 3702
+}
+},
+{
+"num": 3709,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"d": 3710,
+"w": 3711
+}
+},
+{
+"num": 3710,
+"name": "The Blob's Cage",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"u": 3709
+}
+},
+{
+"num": 3711,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"d": 3712,
+"e": 3709
+}
+},
+{
+"num": 3712,
+"name": "The Room of Cages",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"d": 3717,
+"e": 3716,
+"n": 3713,
+"s": 3715,
+"w": 3714
+}
+},
+{
+"num": 3713,
+"name": "A Cage",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"s": 3712
+}
+},
+{
+"num": 3714,
+"name": "A Cage",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3712
+}
+},
+{
+"num": 3715,
+"name": "A Cage",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3712
+}
+},
+{
+"num": 3716,
+"name": "A Cage",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"w": 3712
+}
+},
+{
+"num": 3717,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3719,
+"s": 3718,
+"u": 3712
+}
+},
+{
+"num": 3718,
+"name": "Shop in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3717
+}
+},
+{
+"num": 3719,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3721,
+"n": 3720,
+"w": 3717
+}
+},
+{
+"num": 3720,
+"name": "The Dark Room",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"s": 3719
+}
+},
+{
+"num": 3721,
+"name": "The Last Room of the MUD School!",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3724,
+"w": 3719
+}
+},
+{
+"num": 3722,
+"name": "The South Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3725,
+"n": 3729,
+"w": 3723
+}
+},
+{
+"num": 3723,
+"name": "The South Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3722,
+"n": 3728,
+"w": 3724
+}
+},
+{
+"num": 3724,
+"name": "The Southwest Corner of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3723,
+"n": 3727
+}
+},
+{
+"num": 3725,
+"name": "The South Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3726,
+"n": 3730,
+"w": 3722
+}
+},
+{
+"num": 3726,
+"name": "The Southeast Corner of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3731,
+"w": 3725
+}
+},
+{
+"num": 3727,
+"name": "The West Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3728,
+"n": 3732,
+"s": 3724
+}
+},
+{
+"num": 3728,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3729,
+"n": 3733,
+"s": 3723,
+"w": 3727
+}
+},
+{
+"num": 3729,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3730,
+"n": 3734,
+"s": 3722,
+"w": 3728
+}
+},
+{
+"num": 3730,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3731,
+"n": 3735,
+"s": 3725,
+"w": 3729
+}
+},
+{
+"num": 3731,
+"name": "The East Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3736,
+"s": 3726,
+"w": 3730
+}
+},
+{
+"num": 3732,
+"name": "The West Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3733,
+"n": 3737,
+"s": 3727
+}
+},
+{
+"num": 3733,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3734,
+"n": 3738,
+"s": 3728,
+"w": 3732
+}
+},
+{
+"num": 3734,
+"name": "The Center of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"d": 3748,
+"e": 3735,
+"n": 3739,
+"s": 3729,
+"u": 3760,
+"w": 3733
+}
+},
+{
+"num": 3735,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3736,
+"n": 3740,
+"s": 3730,
+"w": 3734
+}
+},
+{
+"num": 3736,
+"name": "The East Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3741,
+"s": 3731,
+"w": 3735
+}
+},
+{
+"num": 3737,
+"name": "The West Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3738,
+"n": 3742,
+"s": 3732
+}
+},
+{
+"num": 3738,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3739,
+"n": 3743,
+"s": 3733,
+"w": 3737
+}
+},
+{
+"num": 3739,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3740,
+"n": 3744,
+"s": 3734,
+"w": 3738
+}
+},
+{
+"num": 3740,
+"name": "The Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3741,
+"n": 3745,
+"s": 3735,
+"w": 3739
+}
+},
+{
+"num": 3741,
+"name": "The East Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3746,
+"s": 3736,
+"w": 3740
+}
+},
+{
+"num": 3742,
+"name": "The Northwest Corner of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3743,
+"s": 3737
+}
+},
+{
+"num": 3743,
+"name": "The North Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3744,
+"s": 3738,
+"w": 3742
+}
+},
+{
+"num": 3744,
+"name": "The North Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3745,
+"s": 3739,
+"w": 3743
+}
+},
+{
+"num": 3745,
+"name": "The North Wall of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3746,
+"s": 3740,
+"w": 3744
+}
+},
+{
+"num": 3746,
+"name": "The Northeast Corner of the Arena",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"s": 3741,
+"w": 3745
+}
+},
+{
+"num": 3748,
+"name": "The Center of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3753,
+"n": 3750,
+"s": 3755,
+"u": 3734,
+"w": 3752
+}
+},
+{
+"num": 3749,
+"name": "The Northwest Corner of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3750,
+"s": 3752
+}
+},
+{
+"num": 3750,
+"name": "The North Wall of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3751,
+"s": 3748,
+"w": 3749
+}
+},
+{
+"num": 3751,
+"name": "The Northeast Corner of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"s": 3753,
+"w": 3750
+}
+},
+{
+"num": 3752,
+"name": "The West Wall of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3748,
+"n": 3749,
+"s": 3754
+}
+},
+{
+"num": 3753,
+"name": "The East Wall of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3751,
+"s": 3756,
+"w": 3748
+}
+},
+{
+"num": 3754,
+"name": "The Southwest Corner of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3755,
+"n": 3752
+}
+},
+{
+"num": 3755,
+"name": "The South Wall of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3756,
+"n": 3748,
+"w": 3754
+}
+},
+{
+"num": 3756,
+"name": "The Southeast Corner of the Dungeon",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"n": 3753,
+"w": 3755
+}
+},
+{
+"num": 3757,
+"name": "A Room in the MUD School",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3759,
+"n": 3701,
+"s": 3700,
+"u": 400,
+"w": 3758
+}
+},
+{
+"num": 3758,
+"name": "Dwarkin's Training Room",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"e": 3757
+}
+},
+{
+"num": 3759,
+"name": "NoFate's Guild Room",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"w": 3757
+}
+},
+{
+"num": 3760,
+"name": "The Safe Room",
+"area": "MUD School",
+"map": "https://dreamland.rocks/maps/school.html",
+"exits": {
+"d": 3734,
+"u": 3001
+}
+}
+]
