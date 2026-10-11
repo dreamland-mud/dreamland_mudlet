@@ -36,8 +36,7 @@ function dl.quietGenericMapper()
   if not table.contains(getPackages(), "generic_mapper") then
     return
   end
-  local rooms = getRooms() or {}
-  if next(rooms) ~= nil then
+  if dl.map.hasForeignRooms() then
     return
   end
   uninstallPackage("generic_mapper")
@@ -70,6 +69,9 @@ function dl.start()
   registerNamedEventHandler(OWNER, "chat", "gmcp.Comm.Channel.Text", dl.chat.onText)
   registerNamedEventHandler(OWNER, "room", "gmcp.Room.Info", function()
     dl.map.onRoomInfo()
+  end)
+  registerNamedEventHandler(OWNER, "mapDownload", "sysMapDownloadEvent", function()
+    dl.map.onDownloaded()
   end)
   registerNamedEventHandler(OWNER, "resize", "sysWindowResizeEvent", function()
     dl.ui.applyBorder()
