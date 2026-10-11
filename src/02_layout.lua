@@ -1,10 +1,11 @@
--- The right-hand column: chat tabs on top, then the gauges, then the info
--- panel, then the command buttons. Built once; dl.ui.render() refills it.
+-- The right-hand column: chat tabs on top, then the gauges, the map, the info
+-- panel and the command buttons. Built once; dl.ui.render() refills it.
 
 local GAUGE_H = 20
 local GAUGES_H = 4 * (GAUGE_H + 2)
 local TABS_H = 24
-local CHAT_PCT = 32
+local CHAT_PCT = 28
+local MAP_PCT = 30
 local BUTTONS_H = 6 * 26
 
 local function consoleStyle(console)
@@ -57,10 +58,16 @@ function dl.ui.build()
   dl.ui.move = gauge("move", gy .. (2 + 2 * (GAUGE_H + 2)), 40, 150, 60)
   dl.ui.enemy = gauge("enemy", gy .. (2 + 3 * (GAUGE_H + 2)), 200, 120, 30)
 
+  dl.ui.map = Geyser.Mapper:new({
+    name = "dl.map",
+    x = 0, y = gy .. (GAUGES_H + 4),
+    width = "100%", height = MAP_PCT .. "%",
+  }, dl.ui.root)
+
   dl.ui.info = Geyser.MiniConsole:new({
     name = "dl.info",
-    x = 0, y = gy .. (GAUGES_H + 4),
-    width = "100%", height = (100 - CHAT_PCT) .. "%-" .. (GAUGES_H + 4 + BUTTONS_H),
+    x = 0, y = (CHAT_PCT + MAP_PCT) .. "%+" .. (GAUGES_H + 6),
+    width = "100%", height = (100 - CHAT_PCT - MAP_PCT) .. "%-" .. (GAUGES_H + 6 + BUTTONS_H),
   }, dl.ui.root)
   consoleStyle(dl.ui.info)
 
