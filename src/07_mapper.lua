@@ -132,13 +132,50 @@ function dl.map.addRoom(info)
   return num
 end
 
+-- Mudlet only registers the Client.Map URL and offers a download button on an
+-- empty map; the first room drawn here would hide that button for good. So on
+-- an empty map fetch the starter map first and draw the room once it is in.
+local function mapIsEmpty()
+  return next(getRooms() or {}) == nil
+end
+
 function dl.map.onRoomInfo()
   local info = gmcp.Room and gmcp.Room.Info
   if type(info) ~= "table" then
     return
   end
+  if not dl.map.downloadTried and mapIsEmpty() and gmcp.Client and gmcp.Client.Map then
+    dl.map.downloadTried = true
+    dl.map.pending = info
+    downloadMap()
+    return
+  end
+  dl.map.pending = nil
   local num = dl.map.addRoom(info)
   if num then
     centerview(num)
   end
+end
+
+function dl.map.onDownloaded()
+  local info = dl.map.pending
+  dl.map.pending = nil
+  if info then
+    local num = dl.map.addRoom(info)
+    if num then
+      centerview(num)
+    end
+  end
+end
+
+-- True when the map holds rooms that this mapper did not draw, i.e. the
+-- player mapped with something else.
+function dl.map.hasForeignRooms()
+  for id in pairs(getRooms() or {}) do
+    local area = getRoomArea(id)
+    if not area or getAreaUserData(area, "dl.key") == "" then
+      return true
+    end
+  end
+  return false
 end
