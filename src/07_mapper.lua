@@ -135,29 +135,18 @@ end
 -- Mudlet only registers the Client.Map URL and offers a download button on an
 -- empty map; the first room drawn here would hide that button for good. So on
 -- an empty map fetch the starter map first and draw the room once it is in.
+local MAP_FILE = getMudletHomeDir() .. "/dreamland_map.dat"
+
 local function mapIsEmpty()
   return next(getRooms() or {}) == nil
 end
 
-function dl.map.onRoomInfo()
-  local info = gmcp.Room and gmcp.Room.Info
-  if type(info) ~= "table" then
-    return
-  end
-  if not dl.map.downloadTried and mapIsEmpty() and gmcp.Client and gmcp.Client.Map then
-    dl.map.downloadTried = true
-    dl.map.pending = info
-    downloadMap()
-    return
-  end
-  dl.map.pending = nil
-  local num = dl.map.addRoom(info)
-  if num then
-    centerview(num)
-  end
+local function mapUrl()
+  local m = gmcp.Client and gmcp.Client.Map
+  return type(m) == "table" and m.url or nil
 end
 
-function dl.map.onDownloaded()
+local function drawPending()
   local info = dl.map.pending
   dl.map.pending = nil
   if info then
@@ -166,6 +155,49 @@ function dl.map.onDownloaded()
       centerview(num)
     end
   end
+end
+
+function dl.map.onRoomInfo()
+  local info = gmcp.Room and gmcp.Room.Info
+  if type(info) ~= "table" then
+    return
+  end
+  if dl.map.pending then
+    -- Still downloading: draw only the latest room once the map is in.
+    dl.map.pending = info
+    return
+  end
+  if not dl.map.downloadTried and mapIsEmpty() and mapUrl() then
+    dl.map.downloadTried = true
+    dl.map.pending = info
+    downloadFile(MAP_FILE, mapUrl())
+    -- If neither download event ever comes, map from here on anyway.
+    tempTimer(30, drawPending)
+    return
+  end
+  local num = dl.map.addRoom(info)
+  if num then
+    centerview(num)
+  end
+end
+
+function dl.map.onDownloadDone(_, file)
+  if file ~= MAP_FILE then
+    return
+  end
+  -- Only load into a map that is still empty: never overwrite one the
+  -- player has started meanwhile.
+  if mapIsEmpty() then
+    loadMap(MAP_FILE)
+  end
+  drawPending()
+end
+
+function dl.map.onDownloadError(_, err, file)
+  if file ~= MAP_FILE and not tostring(err):find(MAP_FILE, 1, true) then
+    return
+  end
+  drawPending()
 end
 
 -- True when the map holds rooms that this mapper did not draw, i.e. the
