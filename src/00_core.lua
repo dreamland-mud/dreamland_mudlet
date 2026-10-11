@@ -5,7 +5,7 @@
 -- language and with any custom prompt. The game text itself is never gagged or
 -- moved: the panels only repeat it, so screen reader players lose nothing.
 dl = dl or {}
-dl.version = "2.2"
+dl.version = "2.3"
 dl.prompt = dl.prompt or {}
 dl.ui = dl.ui or {}
 
