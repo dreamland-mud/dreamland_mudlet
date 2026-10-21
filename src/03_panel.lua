@@ -98,12 +98,17 @@ local function location(p)
   local ex = p.exits
   if type(ex) == "table" then
     -- e: open exits, h: closed ones, as lowercase English letters.
-    -- l: which letters to draw, "r" for Russian ones.
-    local dirs = { { "n", "N", "С" }, { "e", "E", "В" }, { "s", "S", "Ю" },
-                   { "w", "W", "З" }, { "d", "D", "О" }, { "u", "U", "П" } }
+    -- l: which letters to draw, "r" for Russian ones, "u" for Ukrainian.
+    local dirs = { { "n", "N", "С", "Пн" }, { "e", "E", "В", "Сх" }, { "s", "S", "Ю", "Пд" },
+                   { "w", "W", "З", "Зх" }, { "d", "D", "О", "Вн" }, { "u", "U", "П", "Вг" } }
     out(dl.t("loc.exits") .. " ")
     for _, d in ipairs(dirs) do
-      local letter = ex.l == "r" and d[3] or d[2]
+      local letter = d[2]
+      if ex.l == "r" then
+        letter = d[3]
+      elseif ex.l == "u" then
+        letter = d[4]
+      end
       if string.find(ex.h or "", d[1], 1, true) then
         out(letter .. " ", C.dim)
       elseif string.find(ex.e or "", d[1], 1, true) then
